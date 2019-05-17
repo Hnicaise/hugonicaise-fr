@@ -1,6 +1,7 @@
 $(document).ready(function() {
     fadein();
     $('.container_logo polygon').css('animation-play-state','running');
+    $('.container_logo #pink').css('animation-play-state','running');
     $('a').click(function (e) {
         fadeout();
         e.preventDefault();

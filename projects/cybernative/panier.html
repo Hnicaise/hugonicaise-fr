@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cybernative - Panier</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/achat.css">
+</head>
+
+<body>
+
+    <header id="menu">
+        <span>Cybernative</span>
+        <label for="menu-burger" class="show-menu"><img src="img/menu-burger.png" alt="îcone menu burger"></label>
+        <input type="checkbox" id="menu-burger">
+        <nav>
+            <a href="index-2.html">Accueil
+                <div class="underline"></div>
+            </a>
+            <a href="actu.html">Actualités
+                <div class="underline"></div>
+            </a>
+            <a href="perso.html">Combattants
+                <div class="underline"></div>
+            </a>
+            <a href="achat.html">Acheter
+                <div class="underline active"></div>
+            </a>
+            <img src="img/cart.svg" alt="panier" />
+            <input type="text" placeholder="Entrez votre adresse e-mail">
+            <p>S'inscrire</p>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="intro">
+            <h1>Votre panier</h1>
+            <p>Voici le récapitulatif de votre commande.</p>
+        </div>
+
+        <div class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="image">Image</th>
+                        <th class="title">Titre</th>
+                        <th class="quantity">Qté</th>
+                        <th class="total">Total</th>
+                        <th class="remove">Sup.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="item">
+                        <td class="image"><img src="img/boite-jeu.png" alt=""></td>
+                        <td class="title">Cybernative - jeu physique</td>
+                        <td class="quantity"><input type="text" id="qte" value="1" max="4"></td>
+                        <td class="total" id="tot">12€</td>
+                        <td class="remove"><button id="clear">x</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="check">
+            <div class="notes">
+                <div>
+                    <h2>Notes sur la commande</h2>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div>
+                    <a href="achat.html">&#8636; Retour</a>
+                </div>
+            </div>
+            <div class="checkout">
+                <h2>Total de la commande : <span id="tot-order">12€</span></h2>
+                <button class="refresh" onclick="window.location.reload();">Rafraichir le panier &#8635;</button>
+                <button onclick="window.location='index-2.html'">Payer &#8640;</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="flags">
+            <a id="french" class="disabled"><img src="img/french.svg" alt="french"></a>
+            <a id="english" href="#"><img src="img/english.svg" alt="english"></a>
+        </div>
+        <div class="footer-info">
+            <a href="#">Mentions légales</a>
+            &nbsp;
+            <p>- Copyright © Studio Zeda</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../../ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+        $('#clear').click(function () {
+            $('#item').addClass('d-none');
+        });
+    </script>
+    <script>
+        var qte = $("#qte").val();
+        var calc = qte * 12 + '€';
+        $('#tot').text(calc);
+        $('#tot-order').text(calc);
+    </script>
+
+</body>
+
+</html>

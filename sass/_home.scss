@@ -71,7 +71,7 @@ html, body {
     }
 }
 .container_page {
-    top: 27vh;
+    top: 30vh;
     width: 50vw;
     position: absolute;
     left: 25vw;
@@ -106,9 +106,9 @@ html, body {
             article {
                 h3 {
                     color: #888;
-                    font-variant: small-caps;
-                    font-weight: 700;
-                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1rem;
                     letter-spacing: 2px;
                     display: flex;
                     align-items: center;

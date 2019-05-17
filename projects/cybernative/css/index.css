@@ -1,0 +1,716 @@
+/* line 1, ../scss/_header.scss */
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  width: 100vw;
+  background-color: #000;
+  top: 0;
+  z-index: 10;
+  padding: 30px 0;
+}
+@media screen and (max-width: 768px) {
+  /* line 1, ../scss/_header.scss */
+  #menu {
+    padding: 30px 5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* line 1, ../scss/_header.scss */
+  #menu {
+    padding: 30px 20px;
+  }
+}
+/* line 18, ../scss/_header.scss */
+#menu span {
+  display: none;
+  color: #ff00ff;
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  /* line 18, ../scss/_header.scss */
+  #menu span {
+    display: inherit;
+  }
+}
+/* line 26, ../scss/_header.scss */
+#menu .show-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  /* line 26, ../scss/_header.scss */
+  #menu .show-menu {
+    display: flex;
+    justify-content: right;
+    max-width: 30px;
+  }
+  /* line 34, ../scss/_header.scss */
+  #menu .show-menu img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
+/* line 41, ../scss/_header.scss */
+#menu #menu-burger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 44, ../scss/_header.scss */
+  #menu #menu-burger:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    animation: menuShow 0.5s normal;
+  }
+}
+/* line 51, ../scss/_header.scss */
+#menu nav {
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  /* line 51, ../scss/_header.scss */
+  #menu nav {
+    position: absolute;
+    z-index: 5;
+    display: none;
+    align-items: center;
+    right: 0;
+    top: 12vh;
+    width: 100%;
+    height: 88vh;
+    background-color: #090909;
+  }
+}
+/* line 69, ../scss/_header.scss */
+#menu nav a {
+  display: table-cell;
+  color: #bbb;
+  font-family: inherit;
+  font-size: 20px;
+  margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  /* line 69, ../scss/_header.scss */
+  #menu nav a {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+  }
+}
+/* line 79, ../scss/_header.scss */
+#menu nav a .underline {
+  width: 0%;
+  height: 2px;
+  background-color: #ff00ff;
+  transition: 0.4s;
+}
+/* line 84, ../scss/_header.scss */
+#menu nav a .underline.active {
+  width: 100%;
+}
+/* line 88, ../scss/_header.scss */
+#menu nav a:hover .underline {
+  width: 100%;
+}
+/* line 92, ../scss/_header.scss */
+#menu nav img {
+  width: 15px;
+  margin-right: 100px;
+  position: relative;
+  bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  /* line 92, ../scss/_header.scss */
+  #menu nav img {
+    margin-right: 0;
+    width: 25px;
+  }
+}
+/* line 102, ../scss/_header.scss */
+#menu nav input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #ff00ff;
+  color: white;
+  font-size: 17px;
+  font-family: inherit;
+  width: 240px;
+  padding-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  /* line 102, ../scss/_header.scss */
+  #menu nav input {
+    margin-top: 100px;
+    padding-right: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+}
+/* line 117, ../scss/_header.scss */
+#menu nav input:focus {
+  outline: 0;
+}
+/* line 120, ../scss/_header.scss */
+#menu nav input::placeholder {
+  color: #bbb;
+}
+/* line 124, ../scss/_header.scss */
+#menu nav p {
+  font-size: 17px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #bbb;
+  border-bottom: solid 2px #ff00ff;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  /* line 124, ../scss/_header.scss */
+  #menu nav p {
+    margin-top: 20px;
+    color: #ff00ff;
+    border: none;
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation du menu */
+@keyframes menuShow {
+  0% {
+    right: -700px;
+  }
+  100% {
+    right: 0;
+  }
+}
+/* line 1, ../scss/_footer.scss */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #090909;
+  color: #bbb;
+  font-size: 18px;
+  font-family: "Blender Pro Book";
+}
+/* line 11, ../scss/_footer.scss */
+footer .flags {
+  display: flex;
+}
+/* line 13, ../scss/_footer.scss */
+footer .flags #french {
+  margin-right: 10px;
+}
+/* line 16, ../scss/_footer.scss */
+footer .flags #english {
+  margin-left: 10px;
+}
+/* line 19, ../scss/_footer.scss */
+footer .flags .disabled {
+  opacity: 0.5;
+}
+/* line 22, ../scss/_footer.scss */
+footer .flags img {
+  width: 50px;
+  height: auto;
+}
+/* line 27, ../scss/_footer.scss */
+footer .footer-info {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+/* line 31, ../scss/_footer.scss */
+footer .footer-info a, footer .footer-info p {
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Batmfa";
+  src: url("../fonts/batmfa.ttf");
+}
+@font-face {
+  font-family: "Batmfo";
+  src: url("../fonts/batmfo.ttf");
+}
+/* line 14, ../scss/index.scss */
+body {
+  overflow-x: hidden;
+  font-family: "Blender Pro Book", monospace;
+  background-color: #000000;
+}
+
+/* line 20, ../scss/index.scss */
+#trailer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+}
+/* line 26, ../scss/index.scss */
+#trailer section {
+  background-image: url("../img/texture_dot.png");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+}
+
+/* line 37, ../scss/index.scss */
+.scroll-downs {
+  width: 34px;
+  height: 55px;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  z-index: 2;
+}
+/* line 46, ../scss/index.scss */
+.scroll-downs .mousey {
+  width: 3px;
+  padding: 6px 13px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+/* line 54, ../scss/index.scss */
+.scroll-downs .mousey .scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+/* line 73, ../scss/index.scss */
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 150px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/neotokyo.jpg");
+  background-size: cover;
+  background-position: top;
+}
+/* line 81, ../scss/index.scss */
+#cards .charac {
+  height: 450px;
+  -webkit-filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.7));
+}
+/* line 86, ../scss/index.scss */
+#cards div {
+  color: white;
+  width: 500px;
+  margin-left: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px 50px 70px 50px;
+}
+/* line 92, ../scss/index.scss */
+#cards div h1 {
+  font-family: "Blender Pro Book";
+  font-size: 45px;
+  color: cyan;
+}
+/* line 97, ../scss/index.scss */
+#cards div p {
+  font-family: "Blender Pro Book";
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: justify;
+}
+/* line 103, ../scss/index.scss */
+#cards div a {
+  background-color: cyan;
+  padding: 12px 15px;
+  color: black;
+  font-family: "Blender Pro Book";
+  font-size: 18px;
+}
+
+/* line 113, ../scss/index.scss */
+#masonry {
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/texture_cyan.png");
+}
+/* line 116, ../scss/index.scss */
+#masonry h1 {
+  font-family: "Blender Pro Book";
+  font-size: 45px;
+  color: cyan;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: -1px 1px 5px black;
+}
+/* line 124, ../scss/index.scss */
+#masonry #grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 128, ../scss/index.scss */
+#masonry #grid div {
+  height: 400px;
+  width: 250px;
+  background-color: #111;
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 135, ../scss/index.scss */
+#masonry #grid div:nth-child(2) {
+  background-image: url("../img/perso1.png");
+}
+/* line 138, ../scss/index.scss */
+#masonry #grid div:nth-child(3) {
+  background-image: url("../img/persos/nat-vit-3.png");
+  margin: 0 40px;
+}
+/* line 142, ../scss/index.scss */
+#masonry #grid div:nth-child(4) {
+  background-image: url("../img/perso3.png");
+}
+/* line 146, ../scss/index.scss */
+#masonry #grid a {
+  background-color: cyan;
+  padding: 14px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+/* line 154, ../scss/index.scss */
+#masonry .cyanbtn {
+  background-color: cyan;
+  padding: 12px 15px;
+  color: black;
+  font-family: "Blender Pro Book";
+  font-size: 18px;
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  width: 165px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 169, ../scss/index.scss */
+.container {
+  padding: 100px 10%;
+}
+
+/* line 173, ../scss/index.scss */
+.intro {
+  font-family: "Blender Pro Book";
+  width: 100%;
+  text-align: center;
+}
+/* line 177, ../scss/index.scss */
+.intro h1 {
+  font-size: 45px;
+  color: cyan;
+}
+/* line 181, ../scss/index.scss */
+.intro p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* line 187, ../scss/index.scss */
+.newslist {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 175px;
+  font-family: "Blender Pro Book";
+}
+/* line 193, ../scss/index.scss */
+.newslist a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 40px 30px 30px;
+  background-color: #111;
+  border: solid 1px #222;
+}
+/* line 201, ../scss/index.scss */
+.newslist a .news-title span {
+  color: cyan;
+  padding-top: 5px;
+  border-top: solid 1px cyan;
+}
+/* line 206, ../scss/index.scss */
+.newslist a .news-title h2 {
+  margin-top: 15px;
+  color: cyan;
+  font-size: 1.5rem;
+}
+/* line 213, ../scss/index.scss */
+.newslist a .more button {
+  color: #000;
+  background-color: cyan;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+/* line 222, ../scss/index.scss */
+.newslist a:hover {
+  background-color: cyan;
+}
+/* line 225, ../scss/index.scss */
+.newslist a:hover .news-title span {
+  color: #111;
+  border-top-color: #111;
+}
+/* line 229, ../scss/index.scss */
+.newslist a:hover .news-title h2 {
+  color: #111;
+}
+/* line 234, ../scss/index.scss */
+.newslist a:hover .more button {
+  color: #fff;
+  background-color: #111;
+}
+
+/* line 242, ../scss/index.scss */
+#board2 {
+  display: block;
+  width: 1485px;
+  margin: auto;
+  padding: 100px 0;
+}
+/* line 247, ../scss/index.scss */
+#board2 h1 {
+  font-family: "Blender Pro Book";
+  font-size: 45px;
+  color: cyan;
+  text-align: center;
+}
+
+/* line 255, ../scss/index.scss */
+#plateau, #joueur, #adversaire {
+  display: flex;
+  width: 1485px;
+}
+
+/* line 260, ../scss/index.scss */
+#joueur, #adversaire {
+  height: 400px;
+}
+
+/* line 264, ../scss/index.scss */
+#adversaire {
+  transform: rotate(180deg);
+}
+
+/* line 268, ../scss/index.scss */
+.pile {
+  width: 135px;
+}
+
+/* line 272, ../scss/index.scss */
+#joueur .pile, #adversaire .pile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* line 278, ../scss/index.scss */
+#joueur button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+/* line 284, ../scss/index.scss */
+#adversaire img {
+  width: 130px;
+  position: absolute;
+}
+
+/* line 289, ../scss/index.scss */
+#joueur .carte {
+  width: 130px;
+  height: 185px;
+  position: absolute;
+}
+
+/* line 295, ../scss/index.scss */
+#plateau img {
+  width: 135px;
+}
+
+/* line 299, ../scss/index.scss */
+#adversaire img, #joueur img {
+  width: 125px;
+  margin: 5px;
+}
+
+/* line 305, ../scss/index.scss */
+#joueur img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* line 310, ../scss/index.scss */
+#adversaire img:hover {
+  transform: rotate(180deg);
+  z-index: 10;
+}
+
+/* line 315, ../scss/index.scss */
+#adversaire .carte.position-2 {
+  top: 50px;
+}
+
+/* line 318, ../scss/index.scss */
+#adversaire .carte.position-3 {
+  top: 100px;
+}
+
+/* line 321, ../scss/index.scss */
+#adversaire .carte.position-4 {
+  top: 150px;
+}
+
+/* line 324, ../scss/index.scss */
+#adversaire .carte.position-5 {
+  top: 200px;
+}
+
+/* line 327, ../scss/index.scss */
+#adversaire .carte.position-6 {
+  top: 250px;
+}
+
+/* line 330, ../scss/index.scss */
+#adversaire .carte.position-7 {
+  top: 300px;
+}
+
+/* line 334, ../scss/index.scss */
+#adversaire .carte.position-8 {
+  top: 350px;
+}
+
+/* line 338, ../scss/index.scss */
+#adversaire .carte.position-9 {
+  top: 400px;
+}
+
+/* line 342, ../scss/index.scss */
+#adversaire .carte.position-10 {
+  top: 450px;
+}
+
+/* line 346, ../scss/index.scss */
+#joueur .carte.position-2 {
+  top: 50px;
+}
+
+/* line 349, ../scss/index.scss */
+#joueur .carte.position-3 {
+  top: 100px;
+}
+
+/* line 352, ../scss/index.scss */
+#joueur .carte.position-4 {
+  top: 150px;
+}
+
+/* line 355, ../scss/index.scss */
+#joueur .carte.position-5 {
+  top: 200px;
+}
+
+/* line 358, ../scss/index.scss */
+#joueur .carte.position-6 {
+  top: 250px;
+}
+
+/* line 361, ../scss/index.scss */
+#joueur .carte.position-7 {
+  top: 300px;
+}
+
+/* line 365, ../scss/index.scss */
+#joueur .carte.position-8 {
+  top: 350px;
+}
+
+/* line 369, ../scss/index.scss */
+#joueur .carte.position-9 {
+  top: 400px;
+}
+
+/* line 373, ../scss/index.scss */
+#joueur .carte.position-10 {
+  top: 450px;
+}
+
+/* line 377, ../scss/index.scss */
+.doNotPlay:hover {
+  cursor: not-allowed;
+}
+
+/* line 381, ../scss/index.scss */
+.toPlay:hover {
+  cursor: pointer;
+}
+
+/* line 385, ../scss/index.scss */
+#flyers {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("../img/texture_cyan.png");
+}
+/* line 391, ../scss/index.scss */
+#flyers h1 {
+  font-family: "Blender Pro Book";
+  font-size: 45px;
+  color: cyan;
+  text-align: center;
+  margin-bottom: 50px;
+  text-shadow: -1px 1px 5px black;
+}
+/* line 399, ../scss/index.scss */
+#flyers img {
+  width: 20vw;
+  margin: 0 30px;
+}
