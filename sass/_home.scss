@@ -31,7 +31,7 @@ html, body {
     top: 0;
     left: -100vw;
     background-color: rgb(25, 25, 25);
-    transition: 1s;
+    transition: 1s ease-in-out;
     nav {
         position: absolute;
         bottom: 100px;
@@ -104,9 +104,10 @@ html, body {
         }
         > div {
             article {
+                margin-bottom: 60px;
+                width: 100%;
                 h3 {
                     color: #888;
-                    text-transform: uppercase;
                     font-weight: 600;
                     font-size: 1rem;
                     letter-spacing: 2px;
@@ -120,10 +121,22 @@ html, body {
                     }
                 }
                 p {
-    
+                    font-size: 1rem;
                     text-align: justify;
                     color: #f2f2f2;
                     line-height: 1.5;
+                }
+                a {
+                    color: #aaa;
+                    font-variant: small-caps;
+                    font-size: 1rem;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &:hover {
+
                 }
             }
         }

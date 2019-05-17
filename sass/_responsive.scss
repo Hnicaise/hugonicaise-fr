@@ -1,0 +1,26 @@
+@media screen and (max-width: 1280px) {
+    .container_navigation {
+        width: 100vw;
+        nav {
+            left: 50px;
+        }
+        > a {
+            left: 50px;
+        }
+    }
+    .container_page {
+        top: 100px;
+        left: 220px;
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            .col2 {
+                width: 100%;
+            }
+        }
+    }
+}

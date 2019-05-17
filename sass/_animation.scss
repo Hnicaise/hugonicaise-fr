@@ -1,5 +1,5 @@
 @mixin anim {
-    animation-duration: 2s;
+    animation-duration: 1.2s;
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-iteration-count: "2";
@@ -109,7 +109,7 @@
     33% {
         transform: translate(-33.33%,0);
     }
-    66% {
+    50% {
         transform: translate(-33.33%,0);
     }
     100% {

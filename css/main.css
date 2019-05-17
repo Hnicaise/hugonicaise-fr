@@ -41,7 +41,7 @@ html, body {
   top: 0;
   left: -100vw;
   background-color: #191919;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 /* line 35, ../sass/_home.scss */
 .container_navigation nav {
@@ -128,34 +128,84 @@ html, body {
 .container_page .row .col4 {
   width: calc(25% - 20px);
 }
-/* line 107, ../sass/_home.scss */
+/* line 106, ../sass/_home.scss */
+.container_page .row > div article {
+  margin-bottom: 60px;
+  width: 100%;
+}
+/* line 109, ../sass/_home.scss */
 .container_page .row > div article h3 {
   color: #888;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 2px;
   display: flex;
   align-items: center;
 }
-/* line 115, ../sass/_home.scss */
+/* line 116, ../sass/_home.scss */
 .container_page .row > div article h3 img {
   margin-right: 10px;
   width: 25px;
   height: 25px;
   object-fit: contain;
 }
-/* line 122, ../sass/_home.scss */
+/* line 123, ../sass/_home.scss */
 .container_page .row > div article p {
+  font-size: 1rem;
   text-align: justify;
   color: #f2f2f2;
   line-height: 1.5;
 }
+/* line 129, ../sass/_home.scss */
+.container_page .row > div article a {
+  color: #aaa;
+  font-variant: small-caps;
+  font-size: 1rem;
+  text-decoration: none;
+}
+/* line 134, ../sass/_home.scss */
+.container_page .row > div article a:hover {
+  text-decoration: underline;
+}
 
+@media screen and (max-width: 1280px) {
+  /* line 2, ../sass/_responsive.scss */
+  .container_navigation {
+    width: 100vw;
+  }
+  /* line 4, ../sass/_responsive.scss */
+  .container_navigation nav {
+    left: 50px;
+  }
+  /* line 7, ../sass/_responsive.scss */
+  .container_navigation > a {
+    left: 50px;
+  }
+
+  /* line 11, ../sass/_responsive.scss */
+  .container_page {
+    top: 100px;
+    left: 220px;
+  }
+  /* line 14, ../sass/_responsive.scss */
+  .container_page h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+  }
+  /* line 18, ../sass/_responsive.scss */
+  .container_page .row {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 21, ../sass/_responsive.scss */
+  .container_page .row .col2 {
+    width: 100%;
+  }
+}
 /* MULI */
 /* line 8, ../sass/_animation.scss */
 #green {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -166,7 +216,7 @@ html, body {
 
 /* line 13, ../sass/_animation.scss */
 #orange {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -178,7 +228,7 @@ html, body {
 
 /* line 19, ../sass/_animation.scss */
 #purple {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -190,7 +240,7 @@ html, body {
 
 /* line 25, ../sass/_animation.scss */
 #pink {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -202,7 +252,7 @@ html, body {
 
 /* line 31, ../sass/_animation.scss */
 #yellow {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -214,7 +264,7 @@ html, body {
 
 /* line 37, ../sass/_animation.scss */
 #red {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -226,7 +276,7 @@ html, body {
 
 /* line 43, ../sass/_animation.scss */
 #blue {
-  animation-duration: 2s;
+  animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: "2";
@@ -299,7 +349,7 @@ html, body {
   33% {
     transform: translate(-33.33%, 0);
   }
-  66% {
+  50% {
     transform: translate(-33.33%, 0);
   }
   100% {
