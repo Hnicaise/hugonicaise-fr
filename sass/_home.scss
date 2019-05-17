@@ -1,0 +1,131 @@
+html {
+    font-size: 100%;
+    font-family: 'Muli';
+}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    svg {
+        width: 100px;
+        opacity: 0.99;
+        transition: .8s;
+    }
+}
+.container_navigation {
+    height: 100vh;
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background-color: rgb(25, 25, 25);
+    transition: 1s;
+    nav {
+        position: absolute;
+        bottom: 100px;
+        left: 100px;
+        a {
+            display: table-cell;
+            text-decoration: none;
+            color: white;
+            font-variant: small-caps;
+            font-weight: 800;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            opacity: .5;
+            transition: .3s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .active {
+            opacity: 1;
+        }
+    }
+    > a {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        opacity: .5;
+        transition: .3s;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            width: 40px;
+            
+        }
+    }
+}
+.container_page {
+    top: 27vh;
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+    h2 {
+        font-size: 2.1vw;
+        color: white;
+        font-family: 'PT Sans';
+        font-weight: 400;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        .col1 {
+            width: 100%;
+        }
+        .col2 {
+            width: calc(50% - 20px);
+        }
+        .col3 {
+            width: calc(33.33% - 20px);
+        }
+        .col4 {
+            width: calc(25% - 20px);
+        }
+        > div {
+            article {
+                h3 {
+                    color: #888;
+                    font-variant: small-caps;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    letter-spacing: 2px;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10px;
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
+                    }
+                }
+                p {
+    
+                    text-align: justify;
+                    color: #f2f2f2;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
