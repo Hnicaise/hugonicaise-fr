@@ -10,7 +10,7 @@
     }
     .container_page {
         top: 100px;
-        left: 220px;
+        left: 200px;
         h2 {
             margin-top: 0;
             font-size: 1.6rem;
@@ -18,8 +18,16 @@
         .row {
             display: flex;
             flex-direction: column;
-            .col2 {
-                width: 100%;
+            > div {
+                article {
+                    width: 100%;
+                    h3 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }

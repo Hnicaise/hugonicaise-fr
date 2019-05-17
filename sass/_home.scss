@@ -30,7 +30,7 @@ html, body {
     position: fixed;
     top: 0;
     left: -100vw;
-    background-color: rgb(25, 25, 25);
+    background-color: #1d1d1b;
     transition: 1s ease-in-out;
     nav {
         position: absolute;
@@ -72,9 +72,9 @@ html, body {
 }
 .container_page {
     top: 30vh;
-    width: 50vw;
+    width: 55vw;
     position: absolute;
-    left: 25vw;
+    left: 22vw;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -94,7 +94,10 @@ html, body {
             width: 100%;
         }
         .col2 {
-            width: calc(50% - 20px);
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
         .col3 {
             width: calc(33.33% - 20px);
@@ -105,26 +108,27 @@ html, body {
         > div {
             article {
                 margin-bottom: 60px;
-                width: 100%;
+                width: calc(50% - 30px);
                 h3 {
-                    color: #888;
-                    font-weight: 600;
-                    font-size: 1rem;
+                    color: #aaa;
+                    font-weight: 500;
+                    font-size: 1.2rem;
                     letter-spacing: 2px;
                     display: flex;
                     align-items: center;
                     img {
                         margin-right: 10px;
-                        width: 25px;
-                        height: 25px;
+                        width: 30px;
+                        height: 30px;
                         object-fit: contain;
                     }
                 }
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     text-align: justify;
-                    color: #f2f2f2;
+                    color: #fff;
                     line-height: 1.5;
+                    text-shadow: 0px 0px 5px #000;
                 }
                 a {
                     color: #aaa;
@@ -135,10 +139,20 @@ html, body {
                         text-decoration: underline;
                     }
                 }
-                &:hover {
-
-                }
             }
+            .more {
+                transition: .5s;
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+    .plus {
+        margin: 0;
+        color: #eee;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
