@@ -26,7 +26,7 @@ html, body {
 }
 .container_navigation {
     height: 100vh;
-    width: 90vw;
+    width: 88vw;
     position: fixed;
     top: 0;
     left: -100vw;
@@ -71,7 +71,6 @@ html, body {
     }
 }
 .container_page {
-    top: 30vh;
     width: 55vw;
     position: absolute;
     left: 22vw;
@@ -81,35 +80,45 @@ html, body {
     flex-direction: column;
     opacity: 0;
     transition: 1s;
-    h2 {
-        font-size: 2.1vw;
+    h1 {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        font-size: 2.6vw;
         color: white;
         font-family: 'PT Sans';
         font-weight: 400;
+        margin: 0;
     }
     .row {
         display: flex;
         justify-content: space-between;
-        .col1 {
+        .divided {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            article {
+                width: 100%;
+                p {
+                    font-size: 1.5rem;
+                    columns: 2;
+                    column-gap: 50px;
+                }
+            }
         }
-        .col2 {
+        .col {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        .col3 {
-            width: calc(33.33% - 20px);
-        }
-        .col4 {
-            width: calc(25% - 20px);
-        }
         > div {
             article {
                 margin-bottom: 60px;
                 width: calc(50% - 30px);
-                h3 {
+                h2 {
                     color: #aaa;
                     font-weight: 500;
                     font-size: 1.2rem;
@@ -125,7 +134,7 @@ html, body {
                 }
                 p {
                     font-size: 1.2rem;
-                    text-align: justify;
+                    text-align: left;
                     color: #fff;
                     line-height: 1.5;
                     text-shadow: 0px 0px 5px #000;
@@ -140,19 +149,6 @@ html, body {
                     }
                 }
             }
-            .more {
-                transition: .5s;
-                opacity: 0;
-                display: none;
-            }
-        }
-    }
-    .plus {
-        margin: 0;
-        color: #eee;
-        cursor: pointer;
-        &:hover {
-            text-decoration: underline;
         }
     }
 }

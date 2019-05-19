@@ -36,7 +36,7 @@ html, body {
 /* line 27, ../sass/_home.scss */
 .container_navigation {
   height: 100vh;
-  width: 90vw;
+  width: 88vw;
   position: fixed;
   top: 0;
   left: -100vw;
@@ -89,7 +89,6 @@ html, body {
 
 /* line 73, ../sass/_home.scss */
 .container_page {
-  top: 30vh;
   width: 55vw;
   position: absolute;
   left: 22vw;
@@ -100,44 +99,54 @@ html, body {
   opacity: 0;
   transition: 1s;
 }
-/* line 84, ../sass/_home.scss */
-.container_page h2 {
-  font-size: 2.1vw;
+/* line 83, ../sass/_home.scss */
+.container_page h1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 2.6vw;
   color: white;
   font-family: 'PT Sans';
   font-weight: 400;
+  margin: 0;
 }
-/* line 90, ../sass/_home.scss */
+/* line 93, ../sass/_home.scss */
 .container_page .row {
   display: flex;
   justify-content: space-between;
 }
-/* line 93, ../sass/_home.scss */
-.container_page .row .col1 {
+/* line 96, ../sass/_home.scss */
+.container_page .row .divided {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+/* line 102, ../sass/_home.scss */
+.container_page .row .divided article {
   width: 100%;
 }
-/* line 96, ../sass/_home.scss */
-.container_page .row .col2 {
+/* line 104, ../sass/_home.scss */
+.container_page .row .divided article p {
+  font-size: 1.5rem;
+  columns: 2;
+  column-gap: 50px;
+}
+/* line 111, ../sass/_home.scss */
+.container_page .row .col {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 102, ../sass/_home.scss */
-.container_page .row .col3 {
-  width: calc(33.33% - 20px);
-}
-/* line 105, ../sass/_home.scss */
-.container_page .row .col4 {
-  width: calc(25% - 20px);
-}
-/* line 109, ../sass/_home.scss */
+/* line 118, ../sass/_home.scss */
 .container_page .row > div article {
   margin-bottom: 60px;
   width: calc(50% - 30px);
 }
-/* line 112, ../sass/_home.scss */
-.container_page .row > div article h3 {
+/* line 121, ../sass/_home.scss */
+.container_page .row > div article h2 {
   color: #aaa;
   font-weight: 500;
   font-size: 1.2rem;
@@ -145,46 +154,30 @@ html, body {
   display: flex;
   align-items: center;
 }
-/* line 119, ../sass/_home.scss */
-.container_page .row > div article h3 img {
+/* line 128, ../sass/_home.scss */
+.container_page .row > div article h2 img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
   object-fit: contain;
 }
-/* line 126, ../sass/_home.scss */
+/* line 135, ../sass/_home.scss */
 .container_page .row > div article p {
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: left;
   color: #fff;
   line-height: 1.5;
   text-shadow: 0px 0px 5px #000;
 }
-/* line 133, ../sass/_home.scss */
+/* line 142, ../sass/_home.scss */
 .container_page .row > div article a {
   color: #aaa;
   font-variant: small-caps;
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 138, ../sass/_home.scss */
+/* line 147, ../sass/_home.scss */
 .container_page .row > div article a:hover {
-  text-decoration: underline;
-}
-/* line 143, ../sass/_home.scss */
-.container_page .row > div .more {
-  transition: .5s;
-  opacity: 0;
-  display: none;
-}
-/* line 150, ../sass/_home.scss */
-.container_page .plus {
-  margin: 0;
-  color: #eee;
-  cursor: pointer;
-}
-/* line 154, ../sass/_home.scss */
-.container_page .plus:hover {
   text-decoration: underline;
 }
 
@@ -204,28 +197,27 @@ html, body {
 
   /* line 11, ../sass/_responsive.scss */
   .container_page {
-    top: 100px;
     left: 200px;
   }
-  /* line 14, ../sass/_responsive.scss */
-  .container_page h2 {
+  /* line 13, ../sass/_responsive.scss */
+  .container_page h1 {
     margin-top: 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
-  /* line 18, ../sass/_responsive.scss */
+  /* line 17, ../sass/_responsive.scss */
   .container_page .row {
     display: flex;
     flex-direction: column;
   }
-  /* line 22, ../sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .container_page .row > div article {
     width: 100%;
   }
-  /* line 24, ../sass/_responsive.scss */
-  .container_page .row > div article h3 {
+  /* line 23, ../sass/_responsive.scss */
+  .container_page .row > div article h2 {
     font-size: 1rem;
   }
-  /* line 27, ../sass/_responsive.scss */
+  /* line 26, ../sass/_responsive.scss */
   .container_page .row > div article p {
     font-size: 1rem;
   }

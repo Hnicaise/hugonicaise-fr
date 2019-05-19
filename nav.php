@@ -2,11 +2,12 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="img/fav.png" />
     </head>
     <body>
         <section class="container_logo">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 615 615">
-                    <title>logoFichier 1</title><g id="Calque_2" data-name="Calque 2">
+                    <title>Logo Hugo Nicaise</title><g id="Logo" data-name="Logo">
                     <g id="Calque_1-2" data-name="Calque 1"><rect x="410" y="410" width="205" height="205"
                         id="pink"  style="fill:white;shape-rendering:crispEdges;" />
                         <polygon id="red" style="fill:white;shape-rendering:crispEdges;" points="615 205 615 410 410 410 615 205"></polygon>
