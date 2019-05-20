@@ -127,7 +127,9 @@ html, body {
 				p {
 					font-size: 1.5rem;
 					columns: 2;
-					column-gap: 50px;
+                    column-gap: 50px;
+                    color: white;
+                    text-shadow: 0px 0px 5px #000;
 				}
 			}
 		}
@@ -135,10 +137,8 @@ html, body {
 			width: 100%;
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		> div {
-			article {
+            justify-content: space-between;
+            article {
 				margin-bottom: 60px;
 				width: calc(50% - 30px);
 				p {
@@ -165,37 +165,37 @@ html, body {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			margin: 0 auto;
-		}
-		.image-grid {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			margin-bottom: 40px;
-			h4 {
-				width: 120px;
-				margin-bottom: 30px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				text-align: center;
-				color: white;
-				text-transform: uppercase;
-				font-size: 0.6rem;
-				font-weight: 700;
-				letter-spacing: 2px;
-				img {
-					margin-bottom: 10px;
-					height: 50px;
-					opacity: .2;
-					transition: .5s;
-					&:hover {
-						opacity: 1;
-					}
-				}
-			}
+            margin: 0 auto;
+            .image-grid {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+                h4 {
+                    width: 120px;
+                    margin-bottom: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 0.6rem;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    img {
+                        margin-bottom: 10px;
+                        height: 50px;
+                        opacity: .2;
+                        transition: .5s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
 		}
 	}
 }
