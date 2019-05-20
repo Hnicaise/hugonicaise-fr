@@ -36,7 +36,7 @@ html, body {
 /* line 27, ../sass/_home.scss */
 .container_navigation {
   height: 100vh;
-  width: 88vw;
+  width: calc(100vw - 200px);
   position: fixed;
   top: 0;
   left: -100vw;
@@ -89,9 +89,11 @@ html, body {
 
 /* line 73, ../sass/_home.scss */
 .container_page {
-  width: 55vw;
+  width: 1080px;
   position: absolute;
-  left: 22vw;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -99,54 +101,30 @@ html, body {
   opacity: 0;
   transition: 1s;
 }
-/* line 83, ../sass/_home.scss */
+/* line 85, ../sass/_home.scss */
 .container_page h1 {
   height: 100vh;
   display: flex;
   align-items: center;
-  font-size: 2.6vw;
+  font-size: 3.3rem;
   color: white;
   font-family: 'PT Sans';
   font-weight: 400;
   margin: 0;
 }
-/* line 93, ../sass/_home.scss */
+/* line 95, ../sass/_home.scss */
+.container_page .separator {
+  border: 0;
+  margin: 0;
+  height: 25vh;
+}
+/* line 100, ../sass/_home.scss */
 .container_page .row {
   display: flex;
   justify-content: space-between;
 }
-/* line 96, ../sass/_home.scss */
-.container_page .row .divided {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-/* line 102, ../sass/_home.scss */
-.container_page .row .divided article {
-  width: 100%;
-}
-/* line 104, ../sass/_home.scss */
-.container_page .row .divided article p {
-  font-size: 1.5rem;
-  columns: 2;
-  column-gap: 50px;
-}
-/* line 111, ../sass/_home.scss */
-.container_page .row .col {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* line 118, ../sass/_home.scss */
-.container_page .row > div article {
-  margin-bottom: 60px;
-  width: calc(50% - 30px);
-}
-/* line 121, ../sass/_home.scss */
-.container_page .row > div article h2 {
+/* line 103, ../sass/_home.scss */
+.container_page .row h2 {
   color: #aaa;
   font-weight: 500;
   font-size: 1.2rem;
@@ -154,14 +132,48 @@ html, body {
   display: flex;
   align-items: center;
 }
-/* line 128, ../sass/_home.scss */
-.container_page .row > div article h2 img {
+/* line 110, ../sass/_home.scss */
+.container_page .row h2 img {
   margin-right: 10px;
   width: 30px;
   height: 30px;
   object-fit: contain;
 }
+/* line 117, ../sass/_home.scss */
+.container_page .row h3 {
+  color: white;
+  font-weight: 400;
+}
+/* line 121, ../sass/_home.scss */
+.container_page .row .divided {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+/* line 126, ../sass/_home.scss */
+.container_page .row .divided article {
+  width: 100%;
+}
+/* line 128, ../sass/_home.scss */
+.container_page .row .divided article p {
+  font-size: 1.5rem;
+  columns: 2;
+  column-gap: 50px;
+}
 /* line 135, ../sass/_home.scss */
+.container_page .row .col {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 142, ../sass/_home.scss */
+.container_page .row > div article {
+  margin-bottom: 60px;
+  width: calc(50% - 30px);
+}
+/* line 145, ../sass/_home.scss */
 .container_page .row > div article p {
   font-size: 1.2rem;
   text-align: left;
@@ -169,66 +181,62 @@ html, body {
   line-height: 1.5;
   text-shadow: 0px 0px 5px #000;
 }
-/* line 142, ../sass/_home.scss */
+/* line 152, ../sass/_home.scss */
 .container_page .row > div article a {
   color: #aaa;
   font-variant: small-caps;
   font-size: 1rem;
   text-decoration: none;
 }
-/* line 147, ../sass/_home.scss */
+/* line 157, ../sass/_home.scss */
 .container_page .row > div article a:hover {
   text-decoration: underline;
 }
-
-@media screen and (max-width: 1280px) {
-  /* line 2, ../sass/_responsive.scss */
-  .container_navigation {
-    width: 100vw;
-  }
-  /* line 4, ../sass/_responsive.scss */
-  .container_navigation nav {
-    left: 50px;
-  }
-  /* line 7, ../sass/_responsive.scss */
-  .container_navigation > a {
-    left: 50px;
-  }
-
-  /* line 11, ../sass/_responsive.scss */
-  .container_page {
-    left: 200px;
-  }
-  /* line 13, ../sass/_responsive.scss */
-  .container_page h1 {
-    margin-top: 0;
-    font-size: 1.8rem;
-  }
-  /* line 17, ../sass/_responsive.scss */
-  .container_page .row {
-    display: flex;
-    flex-direction: column;
-  }
-  /* line 21, ../sass/_responsive.scss */
-  .container_page .row > div article {
-    width: 100%;
-  }
-  /* line 23, ../sass/_responsive.scss */
-  .container_page .row > div article h2 {
-    font-size: 1rem;
-  }
-  /* line 26, ../sass/_responsive.scss */
-  .container_page .row > div article p {
-    font-size: 1rem;
-  }
+/* line 163, ../sass/_home.scss */
+.container_page .row .tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
+/* line 170, ../sass/_home.scss */
+.container_page .row .image-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+/* line 176, ../sass/_home.scss */
+.container_page .row .image-grid h4 {
+  width: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+/* line 189, ../sass/_home.scss */
+.container_page .row .image-grid h4 img {
+  margin-bottom: 10px;
+  height: 50px;
+  opacity: .2;
+}
+
 /* MULI */
 /* line 8, ../sass/_animation.scss */
 #green {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 50% 50%;
   animation-name: green;
@@ -239,7 +247,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 16.66% 16.66%;
   animation-name: orange;
@@ -251,7 +259,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 16.66% 50%;
   animation-name: purple;
@@ -263,7 +271,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 83.33% 83.33%;
   animation-name: pink;
@@ -275,7 +283,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 16.66% 83.33%;
   animation-name: yellow;
@@ -287,7 +295,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 83.33% 50%;
   animation-name: red;
@@ -299,7 +307,7 @@ html, body {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
-  animation-iteration-count: "2";
+  animation-iteration-count: infinite;
   animation-play-state: paused;
   transform-origin: 83.33% 16.66%;
   animation-name: blue;

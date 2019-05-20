@@ -1,9 +1,11 @@
+$('.container_logo polygon').css('animation-play-state','running');
+$('.container_logo #pink').css('animation-play-state','running');
 $(document).ready(function() {
     fadein();
-    $('.container_logo polygon').css('animation-play-state','running');
-    $('.container_logo #pink').css('animation-play-state','running');
     $('a').click(function (e) {
         fadeout();
+        $('.container_logo polygon').css('animation-iteration-count','2');
+        $('.container_logo #pink').css('animation-iteration-count','2');
         e.preventDefault();
         var goTo = this.getAttribute("href");
         setTimeout(function(){

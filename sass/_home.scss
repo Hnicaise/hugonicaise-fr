@@ -26,7 +26,7 @@ html, body {
 }
 .container_navigation {
     height: 100vh;
-    width: 88vw;
+    width: calc(100vw - 200px);
     position: fixed;
     top: 0;
     left: -100vw;
@@ -71,9 +71,11 @@ html, body {
     }
 }
 .container_page {
-    width: 55vw;
+    width: 1080px;
     position: absolute;
-    left: 22vw;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -84,21 +86,43 @@ html, body {
         height: 100vh;
         display: flex;
         align-items: center;
-        font-size: 2.6vw;
+        font-size: 3.3rem;
         color: white;
         font-family: 'PT Sans';
         font-weight: 400;
         margin: 0;
     }
+    .separator {
+        border: 0;
+        margin: 0;
+        height: 25vh;
+    }
     .row {
         display: flex;
         justify-content: space-between;
+        h2 {
+            color: #aaa;
+            font-weight: 500;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+                object-fit: contain;
+            }
+        }
+        h3 {
+            color: white;
+            font-weight: 400;
+        }
         .divided {
             width: 100%;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            justify-content: space-between;
             article {
                 width: 100%;
                 p {
@@ -118,20 +142,6 @@ html, body {
             article {
                 margin-bottom: 60px;
                 width: calc(50% - 30px);
-                h2 {
-                    color: #aaa;
-                    font-weight: 500;
-                    font-size: 1.2rem;
-                    letter-spacing: 2px;
-                    display: flex;
-                    align-items: center;
-                    img {
-                        margin-right: 10px;
-                        width: 30px;
-                        height: 30px;
-                        object-fit: contain;
-                    }
-                }
                 p {
                     font-size: 1.2rem;
                     text-align: left;
@@ -147,6 +157,39 @@ html, body {
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+        }
+        .tech {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .image-grid {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            h4 {
+                width: 120px;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: 0.6rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+                img {
+                    margin-bottom: 10px;
+                    height: 50px;
+                    opacity: .2;
                 }
             }
         }
