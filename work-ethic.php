@@ -13,7 +13,7 @@
                     </article>
                     <article class="more">
                         <h2>MY PHILOSOPHY</h2>
-                        <p>In my opinion, web developpement and more specifically front-end design should be qualified as Art just like drawing or any other form of graphic design. As soon as there is a creation, there is Art. Sculpture, drawing, painting require practice over the years, have artistic movements, as well as webdesign. So when I create a website alone from scratch, I consider it like a digital creation first, and not like a commercial product.</p>
+                        <p>In my opinion, web developement and more specifically front-end design should be qualified as Art just like drawing or any other form of graphic design. As soon as there is a creation, there is Art. Sculpture, drawing, painting require practice over the years, have artistic movements as well as webdesign. So when I create a website alone from scratch, I consider it like a digital creation first, and not like a commercial product.</p>
                     </article>
                 </div>
             </div>
