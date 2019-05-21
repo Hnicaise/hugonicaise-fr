@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projects — Hugo Nicaise</title>
+        <title>My latest projects designed in various contexts — Hugo Nicaise — Projects</title>
         <?php $page = 'projects'; include 'nav.php' ?>
         <section class="container_page">
             <h1>My latest projects designed in various contexts, with various people, but always with the same passion.</h1>

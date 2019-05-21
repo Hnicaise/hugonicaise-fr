@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home — Hugo Nicaise</title>
+        <title>Hugo Nicaise — Front-end engineering, digital creation, webiste and SEO</title>
         <?php $page = 'home'; include 'nav.php' ?>
         <section class="container_page">
             <h1>Front-end engineering, digital creation & modern design. </h1>

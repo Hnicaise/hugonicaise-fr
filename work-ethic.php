@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Work Ethic — Hugo Nicaise</title>
+        <title>How do I work, my philosophy — Hugo Nicaise — Work Ethic</title>
         <?php $page = 'work'; include 'nav.php' ?>
         <section class="container_page">
             <h1>Unique & tailor-made. All my creations are developed with an UX-first approach.</h1>

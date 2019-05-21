@@ -10,7 +10,7 @@ $(document).ready(function() {
         var goTo = this.getAttribute("href");
         setTimeout(function(){
             window.location = goTo;
-        }, 1300);
+        }, 1500);
     });
     function fadein() {
         setTimeout(function(){
