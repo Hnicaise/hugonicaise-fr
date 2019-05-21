@@ -1,6 +1,5 @@
 <?php
     $page = 'work';
-    include ('nav.php');
     include ('config.php');
 ?>
 
@@ -8,6 +7,7 @@
 <html>
     <head>
         <title>Blog — <?php echo  title; ?></title>
+        <?php include ('nav.php'); ?>
         <section class="container_page">
             <h1>Coming soon.</h1>
         </section>

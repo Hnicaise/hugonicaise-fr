@@ -1,6 +1,5 @@
 <?php
     $page = 'work';
-    include ('nav.php');
     include ('config.php');
 ?>
 
@@ -8,6 +7,7 @@
 <html>
     <head>
         <title>Work Ethic — <?php echo  title; ?></title>
+        <?php include ('nav.php'); ?>
         <section class="container_page">
             <h1>Unique & tailor-made. All my creations are developed with an UX-first approach.</h1>
             <div class="row">

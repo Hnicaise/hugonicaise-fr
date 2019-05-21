@@ -8,6 +8,7 @@
 <html>
     <head>
         <title>Projects — <?php echo  title; ?></title>
+        <?php include ('nav.php'); ?>
         <section class="container_page">
             <h1>My latest projects designed in various contexts, with various people, but always with the same passion.</h1>
             <div class="row">

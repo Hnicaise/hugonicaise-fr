@@ -1,6 +1,5 @@
 <?php
     $page = 'home';
-    include ('nav.php');
     include ('config.php');
 ?>
 
@@ -8,6 +7,7 @@
 <html>
     <head>
         <title>Hugo Nicaise — <?php echo  title; ?></title>
+        <?php include ('nav.php'); ?>
         <section class="container_page">
             <h1>Front-end engineering, digital creation & modern design.</h1>
             <div class="row">
