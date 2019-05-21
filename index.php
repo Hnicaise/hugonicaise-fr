@@ -18,7 +18,7 @@
                     </article>
                     <article class="more">
                         <h2>My studies</h2>
-                        <p>Back in 2015, I passed a science and mechanic baccalaureate. Right after it, I started a degree in computer science which didn't satisfy me. So, in 2017 I applied to a web development and audiovisual degree which learned me a lot. Now in 2019, I'm beginning in a professional certificate in front and back development.</p>
+                        <p>Back in 2015, I passed a science and mechanic baccalaureate. Right after it, I started a degree in computer science which didn't satisfy me. So, in 2017 I applied to a web development and audiovisual degree which learned me a lot. Now in 2019, I'm beginning a professional certificate in front and back development.</p>
                     </article>
                 </div>
             </div>
