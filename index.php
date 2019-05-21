@@ -1,15 +1,24 @@
+<?php
+    $page = 'home';
+    include ('nav.php');
+    include ('config.php');
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hugo Nicaise — Front-end engineering, digital creation, webiste and SEO</title>
-        <?php $page = 'home'; include 'nav.php' ?>
+        <title>Hugo Nicaise — <?php echo  title; ?></title>
         <section class="container_page">
-            <h1>Front-end engineering, digital creation & modern design. </h1>
+            <h1>Front-end engineering, digital creation & modern design.</h1>
             <div class="row">
                 <div class="divided">
                     <article class="more">
-                        <h2>WHO AM I</h2>
-                        <p>Hello! My name is Hugo Nicaise. Im a web development and audiovisual student in the city of Troyes, France. I started to create websites back in 2015 by curiosity to help my father, but since I never stopped. Beside my degrees, I create websites and digital projects for profesionnals and individuals. I also create personnal projects to keep on learning every single day, because I love my job.</p>
+                        <h2 class=>Who am I</h2>
+                        <p class=>Hello! My name is Hugo Nicaise. I'm a web developer and audiovisual student in the city of Troyes, France. I started to create websites back in 2014 by curiosity to help my father, but since I never stopped. Beside my studies, I create websites and digital projects for professionals and individuals. I also create personal projects to keep on learning every single day because I love my job.</p>
+                    </article>
+                    <article class="more">
+                        <h2>My studies</h2>
+                        <p>Back in 2015, I passed a science and mechanic baccalaureate. Right after it, I started a degree in computer science which didn't satisfy me. So, in 2017 I applied to a web development and audiovisual degree which learned me a lot. Now in 2019, I'm beginning in a professional certificate in front and back development.</p>
                     </article>
                 </div>
             </div>

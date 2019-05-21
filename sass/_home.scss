@@ -1,6 +1,7 @@
 html {
 	font-size: 100%;
-	font-family: 'Muli';
+    font-family: 'Muli';
+    background-color: black;
 }
 html, body {
 	overflow-x: hidden;
@@ -31,7 +32,7 @@ html, body {
 	top: 0;
 	left: -100vw;
 	background-color: #1d1d1b;
-	transition: 1s ease-in-out;
+	//transition: .8s cubic-bezier(.4,0,.2,1);
 	nav {
 		position: absolute;
 		bottom: 100px;
@@ -65,7 +66,7 @@ html, body {
 			opacity: 1;
 		}
 		img {
-			width: 40px;
+			width: 50px;
 		}
 	}
 }
@@ -85,29 +86,29 @@ html, body {
 		height: 100vh;
 		display: flex;
 		align-items: center;
-		font-size: 3.3rem;
+		font-size: 3.2rem;
 		color: white;
-		font-family: 'PT Sans';
-		font-weight: 400;
+		font-family: 'Hind';
+		font-weight: 500;
 		margin: 0;
 	}
 	.separator {
 		border: 0;
 		margin: 0;
-		height: 25vh;
+		height: 100px;
 	}
 	.row {
 		display: flex;
 		justify-content: space-between;
 		h2 {
 			color: #aaa;
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 1.2rem;
 			letter-spacing: 2px;
 			display: flex;
 			align-items: center;
 			img {
-				margin-right: 10px;
+				margin-right: 15px;
 				width: 30px;
 				height: 30px;
 				object-fit: contain;
@@ -123,13 +124,25 @@ html, body {
 			flex-direction: column;
 			flex-wrap: nowrap;
 			article {
-				width: 100%;
+                width: 100%;
+                margin-bottom: 70px;
+                h2 {
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    letter-spacing: 0;
+                    margin-bottom: 50px;
+                    background-color: white;
+                    display: table-cell;
+                    padding: 0 5px;
+                }
 				p {
-					font-size: 1.5rem;
+					font-size: 1.4rem;
 					columns: 2;
-                    column-gap: 50px;
+                    column-gap: 90px;
                     color: white;
                     text-shadow: 0px 0px 5px #000;
+                    line-height: 2;
 				}
 			}
 		}
@@ -166,15 +179,26 @@ html, body {
 			align-items: center;
 			flex-direction: column;
             margin: 0 auto;
+            width: 720px;
+            h2 {
+                color: #000;
+                font-weight: 600;
+                font-size: 1.8rem;
+                letter-spacing: 0;
+                margin-bottom: 60px;
+                background-color: white;
+                display: table-cell;
+                padding: 0 5px;
+            }
             .image-grid {
                 width: 100%;
                 display: flex;
-                justify-content: center;
                 flex-wrap: wrap;
-                margin-bottom: 40px;
+                margin-bottom: 30px;
+                justify-content: flex-start;
                 h4 {
                     width: 120px;
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
