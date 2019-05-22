@@ -21,8 +21,8 @@
             <div class="image-grid" id="app">
                 <h4 v-for="techno in technos" class="more delay"><img v-bind:src="techno.img" v-bind:alt="techno.name" />{{ techno.name }}</h4>
             </div>
-            <script src="js/techno.json.js"></script>
         </article>
     </div>
 </section>
+<script src="js/techno.json.js"></script>
 <?php include 'footer.php' ?>

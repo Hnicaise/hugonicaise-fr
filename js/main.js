@@ -38,4 +38,10 @@ $(document).ready(function() {
         $('.over3').waypoint(function(){
             $('.over3').addClass('over-t');
         }, { offset: '60%'});
+    
+    $('.project').hover(function(){
+        $(this).find(".icon").addClass('animated');
+    }, function(){
+        $('.icon').removeClass('animated');
+    });
 });
