@@ -1,5 +1,3 @@
-$('.container_logo polygon').css('animation-play-state','running');
-$('.container_logo #pink').css('animation-play-state','running');
 $(document).ready(function() {
     fadein();
     $('a').click(function (e) {
@@ -27,21 +25,18 @@ $(document).ready(function() {
         }, 500);
     }
     window.sr = ScrollReveal({ reset: false });
-        sr.reveal('.more', { duration: 600, viewFactor: 0.8 });
-        sr.reveal('.delay', { interval: 50 });
-        $('.over1').waypoint(function(){
-            $('.over1').addClass('over-t');
-        }, { offset: '60%'});
-        $('.over2').waypoint(function(){
-            $('.over2').addClass('over-t');
-        }, { offset: '60%'});
-        $('.over3').waypoint(function(){
-            $('.over3').addClass('over-t');
-        }, { offset: '60%'});
+    sr.reveal('.more', { duration: 600, viewFactor: 0.8 });
+    sr.reveal('.delay', { interval: 50 });
+
     
-    $('.project').hover(function(){
-        $(this).find(".icon").addClass('animated');
-    }, function(){
-        $('.icon').removeClass('animated');
-    });
+    $('.w1').waypoint(function(){
+        $('.w1').addClass('over-t');
+    }, { offset: '60%'});
+    $('.w2').waypoint(function(direction){
+        $('.w2').addClass('over-t');
+    }, { offset: '60%'});
+    $('.w3').waypoint(function(){
+        $('.w3').addClass('over-t');
+    }, { offset: '60%'});
+
 });
