@@ -1,7 +1,13 @@
-<meta charset="utf-8">
+<!--- Hand coded by Hugo Nicaise with ♥ --->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><?php echo before; ?> — Front-End Engineering, Digital Creation and Webiste Development</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <link rel="icon" type="image/png" href="img/fav.png" />
     </head>
     <body>
@@ -16,7 +22,8 @@
                         <polygon id="orange" style="fill:white;shape-rendering:crispEdges;" points="205 205 0 205 0 0 205 205"></polygon>
                         <polygon id="purple" style="fill:white;shape-rendering:crispEdges;" points="0 410 0 205 205 205 0 410"></polygon>
                         <polygon id="yellow" style="fill:white;shape-rendering:crispEdges;" points="0 615 0 410 205 410 0 615"></polygon>
-                </g></g></svg>
+                </g></g>
+            </svg>
         </section>
         <section class="container_navigation">
             <a href="index.php"><img src="img/logo_white.svg" alt="Hugo Nicaise logo" /></a>
