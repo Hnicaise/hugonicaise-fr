@@ -12,6 +12,7 @@ var app = new Vue({
             {name: 'My previous website — Web developer',desc: 'Because sometimes I want to show my improvements through the years. So I leave here my previous freelance contact platform.',img: 'img/freelance.svg',alt: 'My previous website',link: 'projects/.php',},
             {name: 'A-Pluriales — Front-end developer',desc: 'Website for a local camping-car shelter seller. Project developed at Zetruc Troyes agency during my internship.',img: 'img/caravan.svg',alt: 'A-Pluriales website',link: 'projects/.php',},
             {name: 'CL Portfolio — Web developer',desc: 'Little but efficient one page website made for a friend that wanted to have a contact landing page. First real handmade website for someone.',img: 'img/laptop.svg',alt: 'CL Portfolio website',link: 'projects/.php',},
+            {name: 'Les 24h du Web — Front-end developer & Event organizer',desc: 'Event that we created for Troyes University. 8 teams, 5 people per team, 24hours to create a Website, broadcasted in live online. ',img: 'img/chronometer.svg',alt: 'Les 24h du web project',link: 'projects/.php',},
         ]
     }
 })

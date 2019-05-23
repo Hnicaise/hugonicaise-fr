@@ -58,15 +58,36 @@ html, body {
 		position: absolute;
 		left: 100px;
 		top: 100px;
-		opacity: .5;
+		color: #808080;
 		transition: .3s;
 		&:hover {
-			opacity: 1;
+			color: white;
 		}
 		img {
 			width: 50px;
 		}
 	}
+}
+.white-mode {
+	background-color: white;
+	nav {
+		.active {
+			color: black;
+		}
+		> a:hover {
+			color: black;
+		}
+	}
+}
+.big-title {
+	font-family: 'Archivo Black';
+	margin: 0;
+	color: white;
+	opacity: .05;
+	font-weight: 900;
+	font-size: 20rem;
+	position: absolute;
+	right: -100px;
 }
 .container_page {
 	width: 1080px;
@@ -133,20 +154,6 @@ html, body {
 		.over-t > span, .over-t:after {
 			background-position: 0%;
 		}
-		h2 {
-			color: #aaa;
-			font-weight: 600;
-			font-size: 1.2rem;
-			letter-spacing: 2px;
-			display: flex;
-			align-items: center;
-			img {
-				margin-right: 15px;
-				width: 30px;
-				height: 30px;
-				object-fit: contain;
-			}
-		}
 		h3 {
 			color: white;
 			font-weight: 400;
@@ -159,12 +166,21 @@ html, body {
 			article {
                 width: 100%;
 				margin-bottom: 70px;
+				h2 {
+					font-weight: 600;
+					font-size: 1.8rem;
+					letter-spacing: 0;
+					margin-bottom: 50px;
+					display: table-cell;
+					color: #808080;
+				}
 				p {
 					font-size: 1.4rem;
 					columns: 2;
                     column-gap: 90px;
                     color: white;
-                    line-height: 2;
+					line-height: 2;
+					font-weight: 600;
 				}
 			}
 		}
@@ -176,6 +192,20 @@ html, body {
             article {
 				margin-bottom: 60px;
 				width: calc(50% - 30px);
+				h2 {
+					color: #aaa;
+					font-weight: 600;
+					font-size: 1.2rem;
+					letter-spacing: 2px;
+					display: flex;
+					align-items: center;
+					img {
+						margin-right: 15px;
+						width: 30px;
+						height: 30px;
+						object-fit: contain;
+					}
+				}
 				p {
 					font-size: 1.2rem;
 					text-align: left;

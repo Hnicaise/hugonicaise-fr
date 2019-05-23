@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:400,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 /* line 1, ../sass/_global.scss */
 html {
@@ -75,12 +76,12 @@ html, body {
   position: absolute;
   left: 100px;
   top: 100px;
-  opacity: .5;
+  color: #808080;
   transition: .3s;
 }
 /* line 63, ../sass/_global.scss */
 .container_navigation > a:hover {
-  opacity: 1;
+  color: white;
 }
 /* line 66, ../sass/_global.scss */
 .container_navigation > a img {
@@ -88,6 +89,31 @@ html, body {
 }
 
 /* line 71, ../sass/_global.scss */
+.white-mode {
+  background-color: white;
+}
+/* line 74, ../sass/_global.scss */
+.white-mode nav .active {
+  color: black;
+}
+/* line 77, ../sass/_global.scss */
+.white-mode nav > a:hover {
+  color: black;
+}
+
+/* line 82, ../sass/_global.scss */
+.big-title {
+  font-family: 'Archivo Black';
+  margin: 0;
+  color: white;
+  opacity: .05;
+  font-weight: 900;
+  font-size: 20rem;
+  position: absolute;
+  right: -100px;
+}
+
+/* line 92, ../sass/_global.scss */
 .container_page {
   width: 1080px;
   position: absolute;
@@ -101,7 +127,7 @@ html, body {
   opacity: 0;
   transition: 1s;
 }
-/* line 83, ../sass/_global.scss */
+/* line 104, ../sass/_global.scss */
 .container_page h1 {
   height: 100vh;
   display: flex;
@@ -112,18 +138,18 @@ html, body {
   font-weight: 500;
   margin: 0;
 }
-/* line 93, ../sass/_global.scss */
+/* line 114, ../sass/_global.scss */
 .container_page .separator {
   border: 0;
   margin: 0;
   height: 25vh;
 }
-/* line 98, ../sass/_global.scss */
+/* line 119, ../sass/_global.scss */
 .container_page .row {
   display: flex;
   justify-content: space-between;
 }
-/* line 101, ../sass/_global.scss */
+/* line 122, ../sass/_global.scss */
 .container_page .row .over {
   font-weight: 600;
   font-size: 1.8rem;
@@ -134,7 +160,7 @@ html, body {
   position: relative;
   padding: 0;
 }
-/* line 111, ../sass/_global.scss */
+/* line 132, ../sass/_global.scss */
 .container_page .row .over > span {
   display: inline-block;
   background: linear-gradient(90deg, #000 50%, #aaa 50%);
@@ -142,7 +168,7 @@ html, body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 118, ../sass/_global.scss */
+/* line 139, ../sass/_global.scss */
 .container_page .row .over:after {
   content: "";
   position: absolute;
@@ -153,18 +179,65 @@ html, body {
   background: linear-gradient(90deg, white 50%, transparent 50%);
   z-index: -1;
 }
-/* line 128, ../sass/_global.scss */
+/* line 149, ../sass/_global.scss */
 .container_page .row .over > span, .container_page .row .over:after {
   background-size: 300%;
   background-position: 100%;
   transition: 1s;
 }
-/* line 133, ../sass/_global.scss */
+/* line 154, ../sass/_global.scss */
 .container_page .row .over-t > span, .container_page .row .over-t:after {
   background-position: 0%;
 }
-/* line 136, ../sass/_global.scss */
-.container_page .row h2 {
+/* line 157, ../sass/_global.scss */
+.container_page .row h3 {
+  color: white;
+  font-weight: 400;
+}
+/* line 161, ../sass/_global.scss */
+.container_page .row .divided {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+/* line 166, ../sass/_global.scss */
+.container_page .row .divided article {
+  width: 100%;
+  margin-bottom: 70px;
+}
+/* line 169, ../sass/_global.scss */
+.container_page .row .divided article h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  margin-bottom: 50px;
+  display: table-cell;
+  color: #808080;
+}
+/* line 177, ../sass/_global.scss */
+.container_page .row .divided article p {
+  font-size: 1.4rem;
+  columns: 2;
+  column-gap: 90px;
+  color: white;
+  line-height: 2;
+  font-weight: 600;
+}
+/* line 187, ../sass/_global.scss */
+.container_page .row .col {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 192, ../sass/_global.scss */
+.container_page .row .col article {
+  margin-bottom: 60px;
+  width: calc(50% - 30px);
+}
+/* line 195, ../sass/_global.scss */
+.container_page .row .col article h2 {
   color: #aaa;
   font-weight: 600;
   font-size: 1.2rem;
@@ -172,58 +245,21 @@ html, body {
   display: flex;
   align-items: center;
 }
-/* line 143, ../sass/_global.scss */
-.container_page .row h2 img {
+/* line 202, ../sass/_global.scss */
+.container_page .row .col article h2 img {
   margin-right: 15px;
   width: 30px;
   height: 30px;
   object-fit: contain;
 }
-/* line 150, ../sass/_global.scss */
-.container_page .row h3 {
-  color: white;
-  font-weight: 400;
-}
-/* line 154, ../sass/_global.scss */
-.container_page .row .divided {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-/* line 159, ../sass/_global.scss */
-.container_page .row .divided article {
-  width: 100%;
-  margin-bottom: 70px;
-}
-/* line 162, ../sass/_global.scss */
-.container_page .row .divided article p {
-  font-size: 1.4rem;
-  columns: 2;
-  column-gap: 90px;
-  color: white;
-  line-height: 2;
-}
-/* line 171, ../sass/_global.scss */
-.container_page .row .col {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* line 176, ../sass/_global.scss */
-.container_page .row .col article {
-  margin-bottom: 60px;
-  width: calc(50% - 30px);
-}
-/* line 179, ../sass/_global.scss */
+/* line 209, ../sass/_global.scss */
 .container_page .row .col article p {
   font-size: 1.2rem;
   text-align: left;
   color: #fff;
   line-height: 1.5;
 }
-/* line 185, ../sass/_global.scss */
+/* line 215, ../sass/_global.scss */
 .container_page .row .col article .read {
   color: #aaa;
   font-variant: small-caps;
@@ -231,11 +267,11 @@ html, body {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 191, ../sass/_global.scss */
+/* line 221, ../sass/_global.scss */
 .container_page .row .col article .read:hover {
   text-decoration: underline;
 }
-/* line 197, ../sass/_global.scss */
+/* line 227, ../sass/_global.scss */
 .container_page .row .tech {
   display: flex;
   justify-content: center;
@@ -244,7 +280,7 @@ html, body {
   margin: 0 auto;
   width: 720px;
 }
-/* line 204, ../sass/_global.scss */
+/* line 234, ../sass/_global.scss */
 .container_page .row .tech .image-grid {
   width: 100%;
   display: flex;
@@ -252,7 +288,7 @@ html, body {
   margin-bottom: 30px;
   justify-content: flex-start;
 }
-/* line 210, ../sass/_global.scss */
+/* line 240, ../sass/_global.scss */
 .container_page .row .tech .image-grid h4 {
   width: 120px;
   margin-bottom: 40px;
@@ -267,7 +303,7 @@ html, body {
   font-weight: 700;
   letter-spacing: 2px;
 }
-/* line 223, ../sass/_global.scss */
+/* line 253, ../sass/_global.scss */
 .container_page .row .tech .image-grid h4 img {
   margin-bottom: 10px;
   height: 50px;
@@ -276,7 +312,7 @@ html, body {
   opacity: .2;
   transition: .5s;
 }
-/* line 230, ../sass/_global.scss */
+/* line 260, ../sass/_global.scss */
 .container_page .row .tech .image-grid h4 img:hover {
   opacity: 1;
 }

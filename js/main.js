@@ -25,18 +25,24 @@ $(document).ready(function() {
         }, 500);
     }
     window.sr = ScrollReveal({ reset: false });
-    sr.reveal('.more', { duration: 600, viewFactor: 0.8 });
+    sr.reveal('.more', { duration: 600, viewFactor: 0.5 });
     sr.reveal('.delay', { interval: 50 });
 
     
-    $('.w1').waypoint(function(){
-        $('.w1').addClass('over-t');
-    }, { offset: '60%'});
-    $('.w2').waypoint(function(direction){
-        $('.w2').addClass('over-t');
-    }, { offset: '60%'});
-    $('.w3').waypoint(function(){
-        $('.w3').addClass('over-t');
-    }, { offset: '60%'});
+    $('.over').waypoint(function(direction){
+        $(this.element).addClass('over-t');
+    }, { offset: '65%'});
 
+    $('.whitebg').waypoint(function(direction){
+        if (direction == 'down') {
+            $('.container_navigation').css('transition','.8s');
+            $('.container_navigation').addClass('white-mode');
+            $('article p').css('color','black');
+            $('article h2').css('color','black');
+        } else {
+            $('.container_navigation').removeClass('white-mode');
+            $('article p').css('color','');
+            $('article h2').css('color','');
+        }
+    }, { offset: '100%'});
 });
