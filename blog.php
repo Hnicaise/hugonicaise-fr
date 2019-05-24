@@ -1,4 +1,4 @@
-<?php $page = 'work'; define('before','Hugo Nicaise'); include ('nav.php'); ?>
+<?php $page = 'work'; define('before','Blog'); include ('nav.php'); ?>
 
 <section class="container_page">
     <h1>Coming soon.</h1>

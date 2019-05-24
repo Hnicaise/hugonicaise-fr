@@ -1,4 +1,4 @@
-<?php $page = 'home'; define('before','Hugo Nicaise'); include ('nav.php'); ?>
+<?php $page = 'home'; define('before','Home'); include ('nav.php'); ?>
 
 <section class="container_page">
     <h1>Front-end engineering, digital creation & modern design.</h1>
@@ -12,8 +12,9 @@
                 <h2 class="over"><span>My studies</span></h2>
                 <p>Back in 2015, I passed a science and mechanic baccalaureate. Right after it, I started a degree in computer science which didn't satisfy me. So, in 2017 I applied to a web development and audiovisual degree where I learned a lot.<br>Now in 2019, I'm beginning a professional certificate in front and back development.</p>
             </article>
-            <hr class="separator">
+            
         </div>
     </div>
+    <hr class="separator">
 </section>
 <?php include 'footer.php' ?>

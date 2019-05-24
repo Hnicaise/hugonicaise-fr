@@ -26,6 +26,7 @@
             </svg>
         </section>
         <section class="container_navigation">
+        <p class="big-text rellax" data-rellax-speed="-3"><?php echo before; ?></p>
             <a href="index.php"><img src="img/logo_white.svg" alt="Hugo Nicaise logo" /></a>
             <nav>
                 <a class="<?php if($page=='home'){echo 'active';} ?>" href="index.php">home</a>
@@ -39,4 +40,7 @@
                 <a class="<?php if($page=='contact'){echo 'active';} ?>" href="contact.php">contact</a>
             </nav>
         </section>
-        
+        <div class="clock">
+            <p class="time"></p>
+            <p class="caption">HUGOフロントエンドエンジニア</p>
+        </div>

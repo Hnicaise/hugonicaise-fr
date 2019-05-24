@@ -1,8 +1,8 @@
-<?php $page = 'work'; define('before','Work Ethic'); include ('nav.php'); ?>
+<?php $page = 'work'; define('before','Work&nbsp;Ethic'); include ('nav.php'); ?>
 
 <section class="container_page">
     <h1>Unique & tailor-made. All my creations are developed with an UX-first approach.</h1>
-    <div class="row">
+    <div class="row rellax" data-rellax-speed="0">
         <div class="divided">
             <article class="more">
                 <h2 class="over"><span>How do I work</span></h2>
@@ -15,15 +15,5 @@
         </div>
     </div>
     <hr class="separator">
-    <div class="row">
-        <article class="tech">
-            <h2 class="more over"><span>Technologies I use</span></h2>
-            <div class="image-grid" id="app">
-                <h4 v-for="techno in technos" class="more delay"><img v-bind:src="techno.img" v-bind:alt="techno.name" />{{ techno.name }}</h4>
-            </div>
-        </article>
-    </div>
-    <hr class="separator">
 </section>
-<script src="js/techno.json.js"></script>
 <?php include 'footer.php' ?>
