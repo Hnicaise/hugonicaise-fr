@@ -29,10 +29,6 @@ $(document).ready(function() {
             setTimeout(function(){
                 $('.container_page').css('opacity','1');
                 $('.clock').css('opacity','1');
-                $('.big-text').css('opacity','1');
-                setTimeout(function(){
-                    $('.big-text').css('transition','opacity 0s');
-                }, 100);
             }, 800);
         }, 500);
     }
