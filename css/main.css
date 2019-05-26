@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 /* line 1, ../sass/_global.scss */
 html {
   font-size: 100%;
@@ -135,7 +136,7 @@ html, body {
 /* line 108, ../sass/_global.scss */
 .clock .caption {
   height: 30px;
-  text-decoration: underline;
+  border-bottom: 1px solid white;
 }
 
 /* line 113, ../sass/_global.scss */

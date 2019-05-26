@@ -75,7 +75,8 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var iCurScrollPos = $(this).scrollTop();
             iScrollPos = iCurScrollPos;
-            opacity = 1 - iScrollPos/700;
+            opacity = 1 - iScrollPos/500;
             $('.big-text').css('opacity', opacity);
+            $('h1').css('opacity', opacity);
     });
 });
