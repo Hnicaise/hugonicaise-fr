@@ -5,7 +5,7 @@
     <div class="row projects" id="app">
         <article v-for="project in projects" class="project hidden" :class="project.id">
             <h2>{{ project.name }}</h2>
-            <video autoplay="true" loop="true" src="vid/hangover.mp4" preload="auto"></video>
+            <video autoplay="true" loop="true" src="vid/hangover.mp4" preload="auto" muted="true"></video>
             <h3>{{ project.role }}</h3>
         </article>
     </div>
