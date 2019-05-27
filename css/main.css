@@ -1,78 +1,419 @@
-/*
-Error: Invalid CSS after "=======": expected "{", was "}"
-        on line 110 of C:/wamp64/www/hn/sass/_global.scss
-        from line 1 of C:/wamp64/www/hn/sass/main.scss
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+/* line 1, ../sass/_global.scss */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Muli';
+  background-color: black;
+}
 
-105: 			width: 50px;
-106: 		}
-107: 	}
-108: <<<<<<< HEAD
-109: =======
-110: }
-111: .big-text {
-112: 	position: absolute;
-113: 	color: #333;
-114: 	font-size: 15rem;
-115: 	font-family: 'Archivo black';
+/* line 9, ../sass/_global.scss */
+.separator {
+  border: 0;
+  margin: 0;
+  height: 25vh;
+}
 
-Backtrace:
-C:/wamp64/www/hn/sass/_global.scss:110
-C:/wamp64/www/hn/sass/main.scss:1
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"=======\": expected \"{\", was \"}\"\A         on line 110 of C:/wamp64/www/hn/sass/_global.scss\A         from line 1 of C:/wamp64/www/hn/sass/main.scss\A \A 105: 			width: 50px;\A 106: 		}\A 107: 	}\A 108: <<<<<<< HEAD\A 109: =======\A 110: }\A 111: .big-text {\A 112: 	position: absolute;\A 113: 	color: #333;\A 114: 	font-size: 15rem;\A 115: 	font-family: 'Archivo black';"; }
+/* line 14, ../sass/_global.scss */
+.big-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  color: #333;
+  font-size: 15rem;
+  font-family: 'Archivo black';
+  z-index: -1;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  right: 0;
+  margin: 0;
+  top: 50px;
+  text-transform: uppercase;
+}
+
+/* line 31, ../sass/_global.scss */
+.container_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+/* line 42, ../sass/_global.scss */
+.container_logo svg {
+  width: 100px;
+  opacity: 0.99;
+  transition: .8s;
+}
+
+/* line 48, ../sass/_global.scss */
+.container_navigation {
+  height: 100vh;
+  width: calc(100vw - 200px);
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  background-color: #1d1d1b;
+}
+/* line 55, ../sass/_global.scss */
+.container_navigation nav {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+}
+/* line 59, ../sass/_global.scss */
+.container_navigation nav a {
+  display: table-cell;
+  text-decoration: none;
+  color: #808080;
+  font-variant: small-caps;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+/* line 69, ../sass/_global.scss */
+.container_navigation nav a:hover {
+  color: white;
+}
+/* line 73, ../sass/_global.scss */
+.container_navigation nav .active {
+  color: white;
+}
+/* line 77, ../sass/_global.scss */
+.container_navigation > a {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  color: #808080;
+  transition: .3s;
+}
+/* line 83, ../sass/_global.scss */
+.container_navigation > a:hover {
+  color: white;
+}
+/* line 86, ../sass/_global.scss */
+.container_navigation > a img {
+  width: 50px;
+}
+
+/* line 91, ../sass/_global.scss */
+.clock {
+  opacity: 0;
+  position: absolute;
+  bottom: 100px;
+  right: 300px;
+  transition: .5s;
+}
+/* line 97, ../sass/_global.scss */
+.clock p {
+  color: white;
+  text-align: left;
+  font-family: 'PT Sans';
+  margin: 0;
+  font-size: 1.1rem;
+}
+/* line 104, ../sass/_global.scss */
+.clock .caption {
+  height: 30px;
+  border-bottom: 1px solid white;
+}
+
+/* line 1, ../sass/_page.scss */
+.container_page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1080px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 1s;
+}
+/* line 13, ../sass/_page.scss */
+.container_page h1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 3.6rem;
+  color: white;
+  font-family: 'Hind';
+  font-weight: 500;
+  margin: 0;
+}
+/* line 23, ../sass/_page.scss */
+.container_page .row {
+  width: 100%;
+}
+/* line 27, ../sass/_page.scss */
+.container_page .row.projects article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+/* line 31, ../sass/_page.scss */
+.container_page .row.projects article h2 {
+  font-family: 'Staatliches';
+  font-size: 11rem;
+  font-weight: 400;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+  position: absolute;
+  margin: 0;
+  line-height: 1;
+  right: 50%;
+  width: 500px;
+  margin-top: 120px;
+}
+/* line 45, ../sass/_page.scss */
+.container_page .row.projects article div {
+  height: 600px;
+  width: 600px;
+  border-radius: 70px;
+  background-color: red;
+}
+/* line 51, ../sass/_page.scss */
+.container_page .row.projects article h3 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #808080;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-left: 15px;
+  margin-top: 70px;
+}
+/* line 65, ../sass/_page.scss */
+.container_page .row.projects .hidden {
+  display: none;
+}
+/* line 69, ../sass/_page.scss */
+.container_page .row.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100vh;
+  margin-bottom: 120px;
+}
+/* line 76, ../sass/_page.scss */
+.container_page .row.footer p {
+  margin: 0 0 10px 0;
+  color: grey;
+  text-align: right;
+  text-transform: initial;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/* line 83, ../sass/_page.scss */
+.container_page .row.footer p:first-child {
+  font-size: 1.2rem;
+  margin: 0 0 40px 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* MULI */
+/* line 8, ../sass/_animation.scss */
+#green {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 50% 50%;
+  animation-name: green;
+}
+
+/* line 13, ../sass/_animation.scss */
+#orange {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 16.66% 16.66%;
+  animation-name: orange;
+  animation-delay: .1s;
+}
+
+/* line 19, ../sass/_animation.scss */
+#purple {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 16.66% 50%;
+  animation-name: purple;
+  animation-delay: .2s;
+}
+
+/* line 25, ../sass/_animation.scss */
+#pink {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 83.33% 83.33%;
+  animation-name: pink;
+  animation-delay: .3s;
+}
+
+/* line 31, ../sass/_animation.scss */
+#yellow {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 16.66% 83.33%;
+  animation-name: yellow;
+  animation-delay: .4s;
+}
+
+/* line 37, ../sass/_animation.scss */
+#red {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 83.33% 50%;
+  animation-name: red;
+  animation-delay: .5s;
+}
+
+/* line 43, ../sass/_animation.scss */
+#blue {
+  animation-duration: 1.2s;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform-origin: 83.33% 16.66%;
+  animation-name: blue;
+  animation-delay: .6s;
+}
+
+@keyframes green {
+  0% {
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(-180deg);
+  }
+  66% {
+    transform: rotateX(-180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes orange {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33% {
+    transform: rotateY(180deg);
+  }
+  66% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes purple {
+  0% {
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(180deg);
+  }
+  66% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+@keyframes yellow {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33% {
+    transform: rotateY(-180deg);
+  }
+  66% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes pink {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-33.33%, 0);
+  }
+  50% {
+    transform: translate(-33.33%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes blue {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33% {
+    transform: rotateY(180deg);
+  }
+  66% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes red {
+  0% {
+    transform: rotateY(0deg);
+  }
+  33% {
+    transform: rotateY(-180deg);
+  }
+  66% {
+    transform: rotateY(-180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
