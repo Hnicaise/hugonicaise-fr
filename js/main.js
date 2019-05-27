@@ -46,15 +46,15 @@ $(document).ready(function() {
 
     /* ROLLING PROJECTS */
     
-        var i = 0;
-        $('h1').click(function(){
-            console.log('oh');
+        var i = 1;
+        
+        $('.p0').removeClass('hidden');
+        $('video').click(function(){
             $('.project').addClass('hidden');
             $('.p'+ i).removeClass('hidden');
             i++;
-            if (i == 9) {
+            if (i == 10) {
                 i = 0;
             }
         });
-    
 });

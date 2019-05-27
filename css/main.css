@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
-@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Squada+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 /* line 1, ../sass/_global.scss */
 html, body {
@@ -28,7 +28,7 @@ html, body {
   -ms-user-select: none;
   user-select: none;
   position: absolute;
-  color: #333;
+  color: #222;
   font-size: 15rem;
   font-family: 'Archivo black';
   z-index: -1;
@@ -67,7 +67,7 @@ html, body {
   position: fixed;
   top: 0;
   left: -100vw;
-  background-color: #1d1d1b;
+  background-color: #111;
 }
 /* line 55, ../sass/_global.scss */
 .container_navigation nav {
@@ -163,35 +163,36 @@ html, body {
 .container_page .row {
   width: 100%;
 }
-/* line 27, ../sass/_page.scss */
+/* line 28, ../sass/_page.scss */
 .container_page .row.projects article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-/* line 31, ../sass/_page.scss */
+/* line 32, ../sass/_page.scss */
 .container_page .row.projects article h2 {
-  font-family: 'Staatliches';
-  font-size: 11rem;
+  font-family: 'Bebas';
+  font-size: 9rem;
   font-weight: 400;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   color: transparent;
   position: absolute;
+  text-transform: uppercase;
   margin: 0;
-  line-height: 1;
+  line-height: .9;
   right: 50%;
   width: 500px;
-  margin-top: 120px;
+  margin-top: 160px;
+  letter-spacing: 8px;
 }
-/* line 45, ../sass/_page.scss */
-.container_page .row.projects article div {
-  height: 600px;
-  width: 600px;
-  border-radius: 70px;
-  background-color: red;
+/* line 48, ../sass/_page.scss */
+.container_page .row.projects article video {
+  height: 750px;
+  width: 750px;
+  border-radius: 80px;
 }
-/* line 51, ../sass/_page.scss */
+/* line 53, ../sass/_page.scss */
 .container_page .row.projects article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -203,13 +204,13 @@ html, body {
   letter-spacing: 1px;
   font-size: 1rem;
   margin-left: 15px;
-  margin-top: 70px;
+  margin-top: 100px;
 }
-/* line 65, ../sass/_page.scss */
+/* line 67, ../sass/_page.scss */
 .container_page .row.projects .hidden {
   display: none;
 }
-/* line 69, ../sass/_page.scss */
+/* line 71, ../sass/_page.scss */
 .container_page .row.footer {
   display: flex;
   justify-content: flex-end;
@@ -218,7 +219,7 @@ html, body {
   height: 100vh;
   margin-bottom: 120px;
 }
-/* line 76, ../sass/_page.scss */
+/* line 78, ../sass/_page.scss */
 .container_page .row.footer p {
   margin: 0 0 10px 0;
   color: grey;
@@ -227,7 +228,7 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
 }
-/* line 83, ../sass/_page.scss */
+/* line 85, ../sass/_page.scss */
 .container_page .row.footer p:first-child {
   font-size: 1.2rem;
   margin: 0 0 40px 0;
@@ -236,6 +237,10 @@ html, body {
 }
 
 /* MULI */
+@font-face {
+  font-family: 'Bebas';
+  src: url("../font/bebas.ttf");
+}
 /* line 8, ../sass/_animation.scss */
 #green {
   animation-duration: 1.2s;

@@ -2,13 +2,13 @@
 
 <section class="container_page">
     <h1>My latest projects designed in various contexts with the same passion.</h1>
-    <hr class="separator">
     <div class="row projects" id="app">
         <article v-for="project in projects" class="project hidden" :class="project.id">
             <h2>{{ project.name }}</h2>
-            <div class="thumbnail"></div>
+            <video autoplay="true" loop="true" src="vid/hangover.mp4" preload="auto"></video>
             <h3>{{ project.role }}</h3>
         </article>
     </div>
+
     <script src="js/project.json.js"></script>
 <?php include 'footer.php' ?>

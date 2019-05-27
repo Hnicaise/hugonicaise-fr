@@ -24,29 +24,31 @@
         width: 100%;
     }
     .row.projects {
+
         article {
             display: flex;
             justify-content: center;
             align-items: flex-start;
             h2 {
-                font-family: 'Staatliches';
-                font-size: 11rem;
+                font-family: 'Bebas';
+                font-size: 9rem;
                 font-weight: 400;
-                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: white;
                 color: transparent;
                 position: absolute;
+                text-transform: uppercase;
                 margin: 0;
-                line-height: 1;
+                line-height: .9;
                 right: 50%;
                 width: 500px;
-                margin-top: 120px;
+                margin-top: 160px;
+                letter-spacing: 8px;
             }
-            div {
-                height: 600px;
-                width: 600px;
-                border-radius: 70px;
-                background-color: red;
+            video {
+                height: 750px;
+                width: 750px;
+                border-radius: 80px;
             }
             h3 {
                 writing-mode: vertical-rl;
@@ -59,7 +61,7 @@
                 letter-spacing: 1px;
                 font-size: 1rem;
                 margin-left: 15px;
-                margin-top: 70px;
+                margin-top: 100px;
             }
         }
         .hidden {
