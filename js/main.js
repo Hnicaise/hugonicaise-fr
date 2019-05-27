@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
     /* RELLAX INIT */
     var rellax = new Rellax('.rellax');
 
