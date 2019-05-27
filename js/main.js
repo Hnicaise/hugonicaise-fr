@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+
+
     /* RELLAX INIT */
     var rellax = new Rellax('.rellax');
 
@@ -33,50 +36,27 @@ $(document).ready(function() {
         }, 500);
     }
 
-    /* SR REVEAL */
-    window.sr = ScrollReveal({ reset: false });
-    sr.reveal('.more', { duration: 600, viewFactor: 0.5 });
-    sr.reveal('.delay', { interval: 50 });
-
-    /* WAYPOINTS */
-    $('.over').waypoint(function(direction){
-        if (direction == 'down') {
-            $(this.element).addClass('over-t');
-        } else {
-            $(this.element).removeClass('over-t');
-        }
-        
-    }, { offset: '65%'});
-
-    $('.whitebg').waypoint(function(direction){
-        if (direction == 'down') {
-            $('.container_navigation').css('transition','.8s');
-            $('.container_navigation').addClass('white-mode');
-            $('article p').css('color','black');
-            $('article h2').css('color','black');
-        } else {
-            $('.container_navigation').removeClass('white-mode');
-            $('article p').css('color','');
-            $('article h2').css('color','');
-        }
-    }, { offset: '100%'});
-
-    $('.container_page').waypoint(function(direction){
-        if (direction == 'down') {
-            $('.clock').css('opacity','0');
-        } else {
-            $('.clock').css('opacity','1');
-        }
-    }, { offset: '-1px'});
-
     /* SCROLLING DOWN ACTION */
     var iScrollPos = 0;
     var opacity = 0;
     $(window).scroll(function() {
         var iCurScrollPos = $(this).scrollTop();
             iScrollPos = iCurScrollPos;
-            opacity = 1 - iScrollPos/500;
+            opacity = 1 - iScrollPos/400;
             $('.big-text').css('opacity', opacity);
-            $('h1').css('opacity', opacity);
     });
+
+    /* ROLLING PROJECTS */
+    
+        var i = 0;
+        $('h1').click(function(){
+            console.log('oh');
+            $('.project').addClass('hidden');
+            $('.p'+ i).removeClass('hidden');
+            i++;
+            if (i == 9) {
+                i = 0;
+            }
+        });
+    
 });

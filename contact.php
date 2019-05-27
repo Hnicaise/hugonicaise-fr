@@ -2,5 +2,7 @@
 
 <section class="container_page">
     <h1>Let's get in touch.</h1>
-</section>
+    <div class="row contact">
+        
+    </div>
 <?php include 'footer.php' ?>

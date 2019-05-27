@@ -1,0 +1,91 @@
+.container_page {
+    display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 1080px;
+    position: absolute;
+    z-index: 1;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	opacity: 0;
+	transition: 1s;
+	h1 {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		font-size: 3.6rem;
+		color: white;
+		font-family: 'Hind';
+		font-weight: 500;
+		margin: 0;
+	}
+	.row {
+        width: 100%;
+    }
+    .row.projects {
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            h2 {
+                font-family: 'Staatliches';
+                font-size: 11rem;
+                font-weight: 400;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
+                color: transparent;
+                position: absolute;
+                margin: 0;
+                line-height: 1;
+                right: 50%;
+                width: 500px;
+                margin-top: 120px;
+            }
+            div {
+                height: 600px;
+                width: 600px;
+                border-radius: 70px;
+                background-color: red;
+            }
+            h3 {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                margin: 0;
+                line-height: 1;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #808080;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                margin-left: 15px;
+                margin-top: 70px;
+            }
+        }
+        .hidden {
+            display: none;
+        }
+    }
+	.row.footer {
+        display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+        flex-direction: column;
+        height: 100vh;
+		margin-bottom: 120px;
+		p {
+			margin: 0 0 10px 0;
+			color: grey;
+			text-align: right;
+			text-transform: initial;
+			font-size: 1.1rem;
+			font-weight: 600;
+			&:first-child {
+				font-size: 1.2rem;
+				margin: 0 0 40px 0;
+				color: white;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

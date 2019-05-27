@@ -1,545 +1,78 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800");
-@import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
-/* line 1, ../sass/_global.scss */
-html {
-  font-size: 100%;
-  font-family: 'Muli';
-  background-color: black;
-}
+/*
+Error: Invalid CSS after "=======": expected "{", was "}"
+        on line 110 of C:/wamp64/www/hn/sass/_global.scss
+        from line 1 of C:/wamp64/www/hn/sass/main.scss
 
-/* line 6, ../sass/_global.scss */
-html, body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
+105: 			width: 50px;
+106: 		}
+107: 	}
+108: <<<<<<< HEAD
+109: =======
+110: }
+111: .big-text {
+112: 	position: absolute;
+113: 	color: #333;
+114: 	font-size: 15rem;
+115: 	font-family: 'Archivo black';
 
-/* line 11, ../sass/_global.scss */
-.container_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-}
-/* line 22, ../sass/_global.scss */
-.container_logo svg {
-  width: 100px;
-  opacity: 0.99;
-  transition: .8s;
-}
-
-/* line 28, ../sass/_global.scss */
-.container_navigation {
-  height: 100vh;
-  width: calc(100vw - 200px);
-  position: fixed;
-  top: 0;
-  left: -100vw;
-  background-color: #1d1d1b;
-}
-/* line 35, ../sass/_global.scss */
-.container_navigation nav {
-  position: absolute;
-  bottom: 100px;
-  left: 100px;
-}
-/* line 39, ../sass/_global.scss */
-.container_navigation nav a {
-  display: table-cell;
-  text-decoration: none;
-  color: #808080;
-  font-variant: small-caps;
-  font-weight: 800;
-  font-size: 0.9rem;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  transition: .3s;
-}
-/* line 49, ../sass/_global.scss */
-.container_navigation nav a:hover {
-  color: white;
-}
-/* line 53, ../sass/_global.scss */
-.container_navigation nav .active {
-  color: white;
-}
-/* line 57, ../sass/_global.scss */
-.container_navigation > a {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  color: #808080;
-  transition: .3s;
-}
-/* line 63, ../sass/_global.scss */
-.container_navigation > a:hover {
-  color: white;
-}
-/* line 66, ../sass/_global.scss */
-.container_navigation > a img {
-  width: 50px;
-}
-
-/* line 71, ../sass/_global.scss */
-.big-text {
-  position: absolute;
-  color: #333;
-  font-size: 15rem;
-  font-family: 'Archivo black';
-  z-index: -1;
-  top: 50px;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  right: 0;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-/* line 84, ../sass/_global.scss */
-.white-mode {
-  background-color: white;
-}
-/* line 87, ../sass/_global.scss */
-.white-mode nav .active {
-  color: black;
-}
-/* line 90, ../sass/_global.scss */
-.white-mode nav > a:hover {
-  color: black;
-}
-
-/* line 95, ../sass/_global.scss */
-.clock {
-  opacity: 0;
-  position: absolute;
-  bottom: 100px;
-  right: 300px;
-  transition: .5s;
-}
-/* line 101, ../sass/_global.scss */
-.clock p {
-  color: white;
-  text-align: left;
-  font-family: 'PT Sans';
-  margin: 0;
-  font-size: 1.1rem;
-}
-/* line 108, ../sass/_global.scss */
-.clock .caption {
-  height: 30px;
-  border-bottom: 1px solid white;
-}
-
-/* line 113, ../sass/_global.scss */
-.container_page {
-  width: 1080px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 1s;
-}
-/* line 125, ../sass/_global.scss */
-.container_page h1 {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  font-size: 3.6rem;
-  color: white;
-  font-family: 'Hind';
-  font-weight: 500;
-  margin: 0;
-}
-/* line 135, ../sass/_global.scss */
-.container_page .separator {
-  border: 0;
-  margin: 0;
-  height: 25vh;
-}
-/* line 140, ../sass/_global.scss */
-.container_page .row {
-  display: flex;
-  justify-content: space-between;
-}
-/* line 143, ../sass/_global.scss */
-.container_page .row .over {
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0;
-  margin-bottom: 50px;
-  display: table-cell;
-  background: transparent;
-  position: relative;
-  padding: 0;
-}
-/* line 153, ../sass/_global.scss */
-.container_page .row .over > span {
-  display: inline-block;
-  background: linear-gradient(90deg, #000 50%, #aaa 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-/* line 160, ../sass/_global.scss */
-.container_page .row .over:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(90deg, white 50%, transparent 50%);
-  z-index: -1;
-}
-/* line 170, ../sass/_global.scss */
-.container_page .row .over > span, .container_page .row .over:after {
-  background-size: 300%;
-  background-position: 100%;
-  transition: 1s;
-}
-/* line 175, ../sass/_global.scss */
-.container_page .row .over-t > span, .container_page .row .over-t:after {
-  background-position: 0%;
-}
-/* line 178, ../sass/_global.scss */
-.container_page .row h3 {
-  color: white;
-  font-weight: 400;
-}
-/* line 182, ../sass/_global.scss */
-.container_page .row .divided {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}
-/* line 187, ../sass/_global.scss */
-.container_page .row .divided article {
-  width: 100%;
-  margin-bottom: 70px;
-}
-/* line 190, ../sass/_global.scss */
-.container_page .row .divided article h2 {
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0;
-  margin-bottom: 50px;
-  display: table-cell;
-  color: #808080;
-}
-/* line 198, ../sass/_global.scss */
-.container_page .row .divided article p {
-  font-size: 1.4rem;
-  columns: 2;
-  column-gap: 90px;
-  color: white;
-  line-height: 2;
-  font-weight: 600;
-}
-/* line 208, ../sass/_global.scss */
-.container_page .row .col {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* line 213, ../sass/_global.scss */
-.container_page .row .col article {
-  margin-bottom: 60px;
-  width: calc(50% - 30px);
-}
-/* line 216, ../sass/_global.scss */
-.container_page .row .col article h2 {
-  color: #aaa;
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-}
-/* line 223, ../sass/_global.scss */
-.container_page .row .col article h2 img {
-  margin-right: 15px;
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-/* line 230, ../sass/_global.scss */
-.container_page .row .col article p {
-  font-size: 1.2rem;
-  text-align: left;
-  color: #fff;
-  line-height: 1.5;
-}
-/* line 236, ../sass/_global.scss */
-.container_page .row .col article .read {
-  color: #aaa;
-  font-variant: small-caps;
-  font-size: 1rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* line 242, ../sass/_global.scss */
-.container_page .row .col article .read:hover {
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 1630px) {
-  /* line 2, ../sass/_responsive.scss */
-  .container_page {
-    width: 720px;
-  }
-  /* line 4, ../sass/_responsive.scss */
-  .container_page h1 {
-    font-size: 2.9rem;
-  }
-  /* line 9, ../sass/_responsive.scss */
-  .container_page .row .col article {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1280px) {
-  /* line 20, ../sass/_responsive.scss */
-  .clock {
-    right: 100px;
-  }
-
-  /* line 23, ../sass/_responsive.scss */
-  .container_navigation {
-    width: 100vw;
-  }
-  /* line 25, ../sass/_responsive.scss */
-  .container_navigation nav {
-    left: 75px;
-  }
-  /* line 28, ../sass/_responsive.scss */
-  .container_navigation > a {
-    left: 75px;
-  }
-
-  /* line 32, ../sass/_responsive.scss */
-  .container_page {
-    width: 600px;
-  }
-  /* line 37, ../sass/_responsive.scss */
-  .container_page .row .divided article p {
-    font-size: 1.2rem;
-    columns: 1;
-    line-height: 1.7;
-  }
-}
-@media screen and (max-width: 1024px) {
-  /* line 48, ../sass/_responsive.scss */
-  .container_page {
-    width: 470px;
-    margin: 0 0 0 220px;
-  }
-  /* line 51, ../sass/_responsive.scss */
-  .container_page h1 {
-    font-size: 2.3rem;
-  }
-  /* line 57, ../sass/_responsive.scss */
-  .container_page .row .divided article p {
-    font-size: 1.2rem;
-    columns: 1;
-    line-height: 1.7;
-    text-align: justify;
-    font-weight: 500;
-  }
-}
-/* MULI */
-/* line 8, ../sass/_animation.scss */
-#green {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 50% 50%;
-  animation-name: green;
-}
-
-/* line 13, ../sass/_animation.scss */
-#orange {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 16.66% 16.66%;
-  animation-name: orange;
-  animation-delay: .1s;
-}
-
-/* line 19, ../sass/_animation.scss */
-#purple {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 16.66% 50%;
-  animation-name: purple;
-  animation-delay: .2s;
-}
-
-/* line 25, ../sass/_animation.scss */
-#pink {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 83.33% 83.33%;
-  animation-name: pink;
-  animation-delay: .3s;
-}
-
-/* line 31, ../sass/_animation.scss */
-#yellow {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 16.66% 83.33%;
-  animation-name: yellow;
-  animation-delay: .4s;
-}
-
-/* line 37, ../sass/_animation.scss */
-#red {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 83.33% 50%;
-  animation-name: red;
-  animation-delay: .5s;
-}
-
-/* line 43, ../sass/_animation.scss */
-#blue {
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  transform-origin: 83.33% 16.66%;
-  animation-name: blue;
-  animation-delay: .6s;
-}
-
-@keyframes green {
-  0% {
-    transform: rotateX(0deg);
-  }
-  33% {
-    transform: rotateX(-180deg);
-  }
-  66% {
-    transform: rotateX(-180deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-@keyframes orange {
-  0% {
-    transform: rotateY(0deg);
-  }
-  33% {
-    transform: rotateY(180deg);
-  }
-  66% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-@keyframes purple {
-  0% {
-    transform: rotateX(0deg);
-  }
-  33% {
-    transform: rotateX(180deg);
-  }
-  66% {
-    transform: rotateX(180deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
-}
-@keyframes yellow {
-  0% {
-    transform: rotateY(0deg);
-  }
-  33% {
-    transform: rotateY(-180deg);
-  }
-  66% {
-    transform: rotateY(-180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-@keyframes pink {
-  0% {
-    transform: translate(0, 0);
-  }
-  33% {
-    transform: translate(-33.33%, 0);
-  }
-  50% {
-    transform: translate(-33.33%, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-@keyframes blue {
-  0% {
-    transform: rotateY(0deg);
-  }
-  33% {
-    transform: rotateY(180deg);
-  }
-  66% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
-@keyframes red {
-  0% {
-    transform: rotateY(0deg);
-  }
-  33% {
-    transform: rotateY(-180deg);
-  }
-  66% {
-    transform: rotateY(-180deg);
-  }
-  100% {
-    transform: rotateY(0deg);
-  }
-}
+Backtrace:
+C:/wamp64/www/hn/sass/_global.scss:110
+C:/wamp64/www/hn/sass/main.scss:1
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"=======\": expected \"{\", was \"}\"\A         on line 110 of C:/wamp64/www/hn/sass/_global.scss\A         from line 1 of C:/wamp64/www/hn/sass/main.scss\A \A 105: 			width: 50px;\A 106: 		}\A 107: 	}\A 108: <<<<<<< HEAD\A 109: =======\A 110: }\A 111: .big-text {\A 112: 	position: absolute;\A 113: 	color: #333;\A 114: 	font-size: 15rem;\A 115: 	font-family: 'Archivo black';"; }

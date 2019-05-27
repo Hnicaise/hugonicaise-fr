@@ -26,16 +26,12 @@
             </svg>
         </section>
         <section class="container_navigation">
-        <p class="big-text rellax" data-rellax-speed="-3"><?php echo before; ?></p>
+            <p class="big-text rellax" data-rellax-speed="-3"><?php echo before; ?></p>
             <a href="index.php"><img src="img/logo_white.svg" alt="Hugo Nicaise logo" /></a>
             <nav>
                 <a class="<?php if($page=='home'){echo 'active';} ?>" href="index.php">home</a>
                 <br>
-                <a class="<?php if($page=='work'){echo 'active';} ?>" href="work-ethic.php">work ethic</a>
-                <br>
                 <a class="<?php if($page=='projects'){echo 'active';} ?>" href="projects.php">projects</a>
-                <br>
-                <a class="<?php if($page=='blog'){echo 'active';} ?>" href="blog.php">blog</a>
                 <br>
                 <a class="<?php if($page=='contact'){echo 'active';} ?>" href="contact.php">contact</a>
             </nav>
