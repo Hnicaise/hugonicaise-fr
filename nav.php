@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="js/jquery.vide.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <link rel="icon" type="image/png" href="img/fav.png" />
     </head>
     <body>
