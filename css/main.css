@@ -209,7 +209,7 @@ html, body {
 .container_page .row.projects article video {
   height: 67vh;
   width: 67vh;
-  border-radius: 60px;
+  border-radius: 65px;
   object-fit: cover;
 }
 /* line 70, ../sass/_page.scss */
@@ -219,27 +219,63 @@ html, body {
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   color: #808080;
   letter-spacing: 1px;
   font-size: 1rem;
-  margin-left: 15px;
-  margin-top: 60px;
+  position: relative;
 }
-/* line 84, ../sass/_page.scss */
+/* line 82, ../sass/_page.scss */
+.container_page .row.projects article .left {
+  margin-right: 15px;
+  margin-bottom: 70px;
+  bottom: 0;
+  text-align: right;
+  align-self: flex-end;
+}
+/* line 89, ../sass/_page.scss */
+.container_page .row.projects article .right {
+  margin-left: 15px;
+  margin-top: 70px;
+}
+/* line 94, ../sass/_page.scss */
 .container_page .row.projects .hidden {
   display: none;
 }
-/* line 88, ../sass/_page.scss */
+/* line 97, ../sass/_page.scss */
+.container_page .row.projects .next {
+  margin: 30px auto 0 auto;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  display: flex;
+  width: 125px;
+  position: relative;
+  z-index: 9;
+  align-items: center;
+  padding-bottom: 1px;
+}
+/* line 110, ../sass/_page.scss */
+.container_page .row.projects .next:hover {
+  border-bottom: 1px white solid;
+}
+/* line 113, ../sass/_page.scss */
+.container_page .row.projects .next span {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+/* line 119, ../sass/_page.scss */
 .container_page .row.footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 120px;
 }
-/* line 95, ../sass/_page.scss */
+/* line 126, ../sass/_page.scss */
 .container_page .row.footer p {
   margin: 0 0 10px 0;
   color: grey;
@@ -248,7 +284,7 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
 }
-/* line 102, ../sass/_page.scss */
+/* line 133, ../sass/_page.scss */
 .container_page .row.footer p:first-child {
   font-size: 1.2rem;
   margin: 0 0 40px 0;

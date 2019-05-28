@@ -5,7 +5,7 @@ $(window).on('load', function() {
     var rellax = new Rellax('.rellax');
 
     /* CLOCK INIT */
-    $(".clock .time").text($.datepicker.formatDate('yy.mm.dd', new Date()));
+    $(".clock .time").text($.datepicker.formatDate('mm.dd.yy', new Date()));
 
     /* FADEIN FUNCTION & PAGE TRANSITIONS */
     fadein();
@@ -53,18 +53,17 @@ $(window).on('load', function() {
     var i = 1;
     
     $('.p0').removeClass('hidden');
-    $('video').click(function(){
+    $('.next').click(function(){
         $('.project h2').animate({
             opacity: "0",
-        }, 300);
+        }, 500);
         $('.project h3').animate({
             opacity: "0",
-        }, 300);
+        }, 500);
         $('.project video').animate({
             width: "0vh",
         }, 500);
         setTimeout(function(){
-            $('video').attr('currentTime', 0);
             $('.project h2').css('bottom','initial');
             $('.project').addClass('hidden');
             $('.p'+ i).removeClass('hidden');

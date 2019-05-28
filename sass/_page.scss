@@ -64,7 +64,7 @@
             video {
                 height: 67vh;
                 width: 67vh;
-                border-radius: 60px;
+                border-radius: 65px;
                 object-fit: cover;
             }
             h3 {
@@ -73,16 +73,47 @@
                 margin: 0;
                 line-height: 1;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 400;
                 color: #808080;
                 letter-spacing: 1px;
                 font-size: 1rem;
+                position: relative;
+            }
+            .left {
+                margin-right: 15px;
+                margin-bottom: 70px;
+                bottom: 0;
+                text-align: right;
+                align-self: flex-end;
+            }
+            .right {
                 margin-left: 15px;
-                margin-top: 60px;
+                margin-top: 70px;
             }
         }
         .hidden {
             display: none;
+        }
+        .next {
+            margin: 30px auto 0 auto;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            font-variant: small-caps;
+            letter-spacing: 2px;
+            display: flex;
+            width: 125px;
+            position: relative;
+            z-index: 9;
+            align-items: center;
+            padding-bottom: 1px;
+            &:hover {
+                border-bottom: 1px white solid;
+            }
+            span {
+                margin-left: 5px;
+                margin-top: 2px;
+            }
         }
     }
 	.row.footer {
@@ -90,7 +121,7 @@
 		justify-content: flex-end;
 		align-items: flex-end;
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
 		margin-bottom: 120px;
 		p {
 			margin: 0 0 10px 0;
