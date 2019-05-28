@@ -4,7 +4,7 @@ html, body {
 	padding: 0;
 	font-size: 100%;
     font-family: 'Muli';
-	background-color: black;
+	background-color: #111;
 }
 .separator {
 	border: 0;
@@ -17,7 +17,7 @@ html, body {
 	-ms-user-select: none;
 	user-select: none;
 	position: absolute;
-	color: #222;
+	color: #111;
 	font-size: 15rem;
 	font-family: 'Archivo black';
 	z-index: -1;
@@ -38,7 +38,7 @@ html, body {
 	z-index: -1;
 	width: 100vw;
 	height: 100vh;
-	background-color: black;
+	background-color: #080808;
 	svg {
 		width: 100px;
 		opacity: 0.99;
@@ -51,7 +51,7 @@ html, body {
 	position: fixed;
 	top: 0;
 	left: -100vw;
-	background-color: #111;
+	background-color: #000;
 	nav {
 		position: absolute;
 		bottom: 100px;
