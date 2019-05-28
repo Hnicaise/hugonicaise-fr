@@ -1,6 +1,4 @@
 $(window).on('load', function() {
-    $('.container_logo polygon').css('animation-play-state','running');
-    $('.container_logo #pink').css('animation-play-state','running');
     /* RELLAX INIT */
     var rellax = new Rellax('.rellax');
 

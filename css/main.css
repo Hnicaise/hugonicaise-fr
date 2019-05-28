@@ -297,84 +297,77 @@ html, body {
   font-family: 'Bebas';
   src: url("../font/bebas.ttf");
 }
-/* line 8, ../sass/_animation.scss */
+/* line 7, ../sass/_animation.scss */
 #green {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 50% 50%;
   animation-name: green;
 }
 
-/* line 13, ../sass/_animation.scss */
+/* line 12, ../sass/_animation.scss */
 #orange {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 16.66% 16.66%;
   animation-name: orange;
   animation-delay: .1s;
 }
 
-/* line 19, ../sass/_animation.scss */
+/* line 18, ../sass/_animation.scss */
 #purple {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 16.66% 50%;
   animation-name: purple;
   animation-delay: .2s;
 }
 
-/* line 25, ../sass/_animation.scss */
+/* line 24, ../sass/_animation.scss */
 #pink {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 83.33% 83.33%;
   animation-name: pink;
   animation-delay: .3s;
 }
 
-/* line 31, ../sass/_animation.scss */
+/* line 30, ../sass/_animation.scss */
 #yellow {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 16.66% 83.33%;
   animation-name: yellow;
   animation-delay: .4s;
 }
 
-/* line 37, ../sass/_animation.scss */
+/* line 36, ../sass/_animation.scss */
 #red {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 83.33% 50%;
   animation-name: red;
   animation-delay: .5s;
 }
 
-/* line 43, ../sass/_animation.scss */
+/* line 42, ../sass/_animation.scss */
 #blue {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: paused;
   transform-origin: 83.33% 16.66%;
   animation-name: blue;
   animation-delay: .6s;
