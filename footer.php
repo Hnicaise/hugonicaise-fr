@@ -5,7 +5,7 @@
             <p>Ape : 7410Z</p>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -1,5 +1,6 @@
-$(document).ready(function() {
-
+$(window).on('load', function() {
+    $('.container_logo polygon').css('animation-play-state','running');
+    $('.container_logo #pink').css('animation-play-state','running');
     /* RELLAX INIT */
     var rellax = new Rellax('.rellax');
 
@@ -40,21 +41,47 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var iCurScrollPos = $(this).scrollTop();
             iScrollPos = iCurScrollPos;
-            opacity = 1 - iScrollPos/400;
+            opacity = 1 - iScrollPos/900;
+            if (opacity < 0.6) {
+                opacity = 0.6;
+            }
             $('.big-text').css('opacity', opacity);
     });
 
     /* ROLLING PROJECTS */
     
-        var i = 1;
-        
-        $('.p0').removeClass('hidden');
-        $('video').click(function(){
+    var i = 1;
+    
+    $('.p0').removeClass('hidden');
+    $('video').click(function(){
+        $('.project h2').animate({
+            opacity: "0",
+        }, 300);
+        $('.project h3').animate({
+            opacity: "0",
+        }, 300);
+        $('.project video').animate({
+            width: "0vh",
+        }, 500);
+        setTimeout(function(){
+            $('video').attr('currentTime', 0);
+            $('.project h2').css('bottom','initial');
             $('.project').addClass('hidden');
             $('.p'+ i).removeClass('hidden');
             i++;
-            if (i == 10) {
+            if (i == 5) {
                 i = 0;
             }
-        });
+            $('.project h2').animate({
+                opacity: "1",
+            }, 300);
+            $('.project h3').animate({
+                opacity: "1",
+            }, 300);
+            $('.project video').animate({
+                width: "67vh",
+                hright: "67vh"
+            }, 500);
+        }, 800);
+    });
 });

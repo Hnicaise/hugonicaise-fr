@@ -11,7 +11,7 @@ html, body {
   padding: 0;
   font-size: 100%;
   font-family: 'Muli';
-  background-color: #111;
+  background-color: #0c0c0c;
 }
 
 /* line 9, ../sass/_global.scss */
@@ -28,19 +28,20 @@ html, body {
   -ms-user-select: none;
   user-select: none;
   position: absolute;
-  color: #111;
   font-size: 15rem;
   font-family: 'Archivo black';
   z-index: -1;
   writing-mode: vertical-rl;
   text-orientation: mixed;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #686868;
   right: 0;
   margin: 0;
   top: 50px;
   text-transform: uppercase;
 }
 
-/* line 31, ../sass/_global.scss */
+/* line 33, ../sass/_global.scss */
 .container_logo {
   display: flex;
   justify-content: center;
@@ -51,16 +52,16 @@ html, body {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-color: #080808;
+  background-color: #0c0c0c;
 }
-/* line 42, ../sass/_global.scss */
+/* line 44, ../sass/_global.scss */
 .container_logo svg {
   width: 100px;
   opacity: 0.99;
   transition: .8s;
 }
 
-/* line 48, ../sass/_global.scss */
+/* line 50, ../sass/_global.scss */
 .container_navigation {
   height: 100vh;
   width: calc(100vw - 200px);
@@ -69,13 +70,13 @@ html, body {
   left: -100vw;
   background-color: #000;
 }
-/* line 55, ../sass/_global.scss */
+/* line 57, ../sass/_global.scss */
 .container_navigation nav {
   position: absolute;
   bottom: 100px;
   left: 100px;
 }
-/* line 59, ../sass/_global.scss */
+/* line 61, ../sass/_global.scss */
 .container_navigation nav a {
   display: table-cell;
   text-decoration: none;
@@ -87,15 +88,15 @@ html, body {
   margin-bottom: 20px;
   transition: .3s;
 }
-/* line 69, ../sass/_global.scss */
+/* line 71, ../sass/_global.scss */
 .container_navigation nav a:hover {
   color: white;
 }
-/* line 73, ../sass/_global.scss */
+/* line 75, ../sass/_global.scss */
 .container_navigation nav .active {
   color: white;
 }
-/* line 77, ../sass/_global.scss */
+/* line 79, ../sass/_global.scss */
 .container_navigation > a {
   position: absolute;
   left: 100px;
@@ -103,16 +104,16 @@ html, body {
   color: #808080;
   transition: .3s;
 }
-/* line 83, ../sass/_global.scss */
+/* line 85, ../sass/_global.scss */
 .container_navigation > a:hover {
   color: white;
 }
-/* line 86, ../sass/_global.scss */
+/* line 88, ../sass/_global.scss */
 .container_navigation > a img {
   width: 50px;
 }
 
-/* line 91, ../sass/_global.scss */
+/* line 93, ../sass/_global.scss */
 .clock {
   opacity: 0;
   position: absolute;
@@ -120,7 +121,7 @@ html, body {
   right: 300px;
   transition: .5s;
 }
-/* line 97, ../sass/_global.scss */
+/* line 99, ../sass/_global.scss */
 .clock p {
   color: white;
   text-align: left;
@@ -128,10 +129,11 @@ html, body {
   margin: 0;
   font-size: 1.1rem;
 }
-/* line 104, ../sass/_global.scss */
+/* line 106, ../sass/_global.scss */
 .clock .caption {
   height: 30px;
   border-bottom: 1px solid white;
+  padding: 0;
 }
 
 /* line 1, ../sass/_page.scss */
@@ -168,11 +170,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 }
-/* line 32, ../sass/_page.scss */
+/* line 33, ../sass/_page.scss */
 .container_page .row.projects article h2 {
+  display: flex;
   font-family: 'Bebas';
-  font-size: 9rem;
+  font-size: 10rem;
   font-weight: 400;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
@@ -181,18 +185,34 @@ html, body {
   text-transform: uppercase;
   margin: 0;
   line-height: .9;
-  right: 50%;
+  left: 50px;
   width: 500px;
-  margin-top: 160px;
+  margin-top: 150px;
   letter-spacing: 8px;
 }
-/* line 48, ../sass/_page.scss */
-.container_page .row.projects article video {
-  height: 750px;
-  width: 750px;
-  border-radius: 80px;
+/* line 34, ../sass/_page.scss */
+.container_page .row.projects article h2 span {
+  position: relative;
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #808080;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-family: 'Hind';
+  -webkit-text-stroke-width: 0;
+  right: 10px;
+  top: 6px;
 }
-/* line 53, ../sass/_page.scss */
+/* line 64, ../sass/_page.scss */
+.container_page .row.projects article video {
+  height: 67vh;
+  width: 67vh;
+  border-radius: 60px;
+  object-fit: cover;
+}
+/* line 70, ../sass/_page.scss */
 .container_page .row.projects article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -204,13 +224,13 @@ html, body {
   letter-spacing: 1px;
   font-size: 1rem;
   margin-left: 15px;
-  margin-top: 100px;
+  margin-top: 60px;
 }
-/* line 67, ../sass/_page.scss */
+/* line 84, ../sass/_page.scss */
 .container_page .row.projects .hidden {
   display: none;
 }
-/* line 71, ../sass/_page.scss */
+/* line 88, ../sass/_page.scss */
 .container_page .row.footer {
   display: flex;
   justify-content: flex-end;
@@ -219,7 +239,7 @@ html, body {
   height: 100vh;
   margin-bottom: 120px;
 }
-/* line 78, ../sass/_page.scss */
+/* line 95, ../sass/_page.scss */
 .container_page .row.footer p {
   margin: 0 0 10px 0;
   color: grey;
@@ -228,7 +248,7 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
 }
-/* line 85, ../sass/_page.scss */
+/* line 102, ../sass/_page.scss */
 .container_page .row.footer p:first-child {
   font-size: 1.2rem;
   margin: 0 0 40px 0;
@@ -247,7 +267,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 50% 50%;
   animation-name: green;
 }
@@ -258,7 +278,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 16.66% 16.66%;
   animation-name: orange;
   animation-delay: .1s;
@@ -270,7 +290,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 16.66% 50%;
   animation-name: purple;
   animation-delay: .2s;
@@ -282,7 +302,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 83.33% 83.33%;
   animation-name: pink;
   animation-delay: .3s;
@@ -294,7 +314,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 16.66% 83.33%;
   animation-name: yellow;
   animation-delay: .4s;
@@ -306,7 +326,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 83.33% 50%;
   animation-name: red;
   animation-delay: .5s;
@@ -318,7 +338,7 @@ html, body {
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation-play-state: running;
+  animation-play-state: paused;
   transform-origin: 83.33% 16.66%;
   animation-name: blue;
   animation-delay: .6s;

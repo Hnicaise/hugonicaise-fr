@@ -3,8 +3,8 @@
 <section class="container_page">
     <h1>My latest projects designed in various contexts with the same passion.</h1>
     <div class="row projects" id="app">
-        <article v-for="project in projects" class="project hidden" :class="project.id">
-            <h2>{{ project.name }}</h2>
+        <article v-for="project in projects" class="project hidden" :class="project.class">
+            <h2><span>{{ project.id }}</span>{{ project.name }}</h2>
             <video autoplay="true" loop="true" :src="project.video" preload="auto" muted="true"></video>
             <h3>{{ project.role }}</h3>
         </article>

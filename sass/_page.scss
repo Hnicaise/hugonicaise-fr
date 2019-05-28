@@ -29,9 +29,25 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
+            position: relative;
             h2 {
+                span {
+                    position: relative;
+                    margin: 0;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    color: #808080;
+                    letter-spacing: 1px;
+                    font-size: 1.2rem;
+                    font-family: 'Hind';
+                    -webkit-text-stroke-width: 0;
+                    right: 10px;
+                    top: 6px;
+                }
+                display: flex;
                 font-family: 'Bebas';
-                font-size: 9rem;
+                font-size: 10rem;
                 font-weight: 400;
                 -webkit-text-stroke-width: 2px;
                 -webkit-text-stroke-color: white;
@@ -40,15 +56,16 @@
                 text-transform: uppercase;
                 margin: 0;
                 line-height: .9;
-                right: 50%;
+                left: 50px;
                 width: 500px;
-                margin-top: 160px;
+                margin-top: 150px;
                 letter-spacing: 8px;
             }
             video {
-                height: 750px;
-                width: 750px;
-                border-radius: 80px;
+                height: 67vh;
+                width: 67vh;
+                border-radius: 60px;
+                object-fit: cover;
             }
             h3 {
                 writing-mode: vertical-rl;
@@ -61,7 +78,7 @@
                 letter-spacing: 1px;
                 font-size: 1rem;
                 margin-left: 15px;
-                margin-top: 100px;
+                margin-top: 60px;
             }
         }
         .hidden {
