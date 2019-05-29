@@ -94,25 +94,26 @@
         .hidden {
             display: none;
         }
-        .next {
-            margin: 30px auto 0 auto;
-            color: white;
-            text-align: center;
-            cursor: pointer;
-            font-variant: small-caps;
-            letter-spacing: 2px;
+        .nav {
             display: flex;
-            width: 125px;
-            position: relative;
-            z-index: 9;
-            align-items: center;
-            padding-bottom: 1px;
-            &:hover {
-                border-bottom: 1px white solid;
-            }
-            span {
-                margin-left: 5px;
-                margin-top: 2px;
+            justify-content: center;
+            width: 500px;
+            margin: 30px auto 0 auto;
+            .next {
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                font-variant: small-caps;
+                letter-spacing: 2px;
+                display: table-cell;
+                position: relative;
+                z-index: 9;
+                align-items: center;
+                padding-bottom: 1px;
+                font-size: 1.1rem;
+                &:hover {
+                    border-bottom: 1px white solid;
+                }
             }
         }
     }

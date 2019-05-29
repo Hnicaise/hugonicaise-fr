@@ -6,7 +6,8 @@ $(window).on('load', function() {
     $(".clock .time").text($.datepicker.formatDate('mm.dd.yy', new Date()));
 
     /* FADEIN FUNCTION & PAGE TRANSITIONS */
-    fadein();
+    
+    
     $('a').click(function (e) {
         $('.container_logo').css('left','100vw');
         $('.container_logo').css('z-index','999');
@@ -22,6 +23,8 @@ $(window).on('load', function() {
         }, 800);
     });
     function fadein() {
+        $('.container_logo polygon').css('animation-play-state','running');
+        $('.container_logo #pink').css('animation-play-state','running');
         setTimeout(function(){
             $('.container_navigation').animate({
                 left: "0",
@@ -49,7 +52,7 @@ $(window).on('load', function() {
     /* ROLLING PROJECTS */
     
     var i = 1;
-    
+    var nbItems = $('.project').length;
     $('.p0').removeClass('hidden');
     $('.next').click(function(){
         $('.project h2').animate({
@@ -66,7 +69,7 @@ $(window).on('load', function() {
             $('.project').addClass('hidden');
             $('.p'+ i).removeClass('hidden');
             i++;
-            if (i == 5) {
+            if (i == nbItems) {
                 i = 0;
             }
             $('.project h2').animate({
@@ -81,4 +84,8 @@ $(window).on('load', function() {
             }, 500);
         }, 800);
     });
+    Pace.on('done', function() {
+        fadein();
+    });
+    
 });

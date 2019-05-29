@@ -9,7 +9,9 @@
             <video autoplay="true" loop="true" :src="project.video" preload="auto" muted="true"></video>
             <h3 class="right">{{ project.role }}</h3>
         </article>
-        <p class="next">next project <span>🠂</span></p>
+        <div class="nav">
+            <p class="next">next project</p>
+        </div>
     </div>
 
     <script src="js/project.json.js"></script>

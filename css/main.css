@@ -243,30 +243,31 @@ html, body {
   display: none;
 }
 /* line 97, ../sass/_page.scss */
-.container_page .row.projects .next {
+.container_page .row.projects .nav {
+  display: flex;
+  justify-content: center;
+  width: 500px;
   margin: 30px auto 0 auto;
+}
+/* line 102, ../sass/_page.scss */
+.container_page .row.projects .nav .next {
   color: white;
   text-align: center;
   cursor: pointer;
   font-variant: small-caps;
   letter-spacing: 2px;
-  display: flex;
-  width: 125px;
+  display: table-cell;
   position: relative;
   z-index: 9;
   align-items: center;
   padding-bottom: 1px;
+  font-size: 1.1rem;
 }
-/* line 110, ../sass/_page.scss */
-.container_page .row.projects .next:hover {
+/* line 114, ../sass/_page.scss */
+.container_page .row.projects .nav .next:hover {
   border-bottom: 1px white solid;
 }
-/* line 113, ../sass/_page.scss */
-.container_page .row.projects .next span {
-  margin-left: 5px;
-  margin-top: 2px;
-}
-/* line 119, ../sass/_page.scss */
+/* line 120, ../sass/_page.scss */
 .container_page .row.footer {
   display: flex;
   justify-content: flex-end;
@@ -275,7 +276,7 @@ html, body {
   height: 80vh;
   margin-bottom: 120px;
 }
-/* line 126, ../sass/_page.scss */
+/* line 127, ../sass/_page.scss */
 .container_page .row.footer p {
   margin: 0 0 10px 0;
   color: grey;
@@ -284,7 +285,7 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
 }
-/* line 133, ../sass/_page.scss */
+/* line 134, ../sass/_page.scss */
 .container_page .row.footer p:first-child {
   font-size: 1.2rem;
   margin: 0 0 40px 0;
@@ -297,77 +298,84 @@ html, body {
   font-family: 'Bebas';
   src: url("../font/bebas.ttf");
 }
-/* line 7, ../sass/_animation.scss */
+/* line 8, ../sass/_animation.scss */
 #green {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 50% 50%;
   animation-name: green;
 }
 
-/* line 12, ../sass/_animation.scss */
+/* line 13, ../sass/_animation.scss */
 #orange {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 16.66% 16.66%;
   animation-name: orange;
   animation-delay: .1s;
 }
 
-/* line 18, ../sass/_animation.scss */
+/* line 19, ../sass/_animation.scss */
 #purple {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 16.66% 50%;
   animation-name: purple;
   animation-delay: .2s;
 }
 
-/* line 24, ../sass/_animation.scss */
+/* line 25, ../sass/_animation.scss */
 #pink {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 83.33% 83.33%;
   animation-name: pink;
   animation-delay: .3s;
 }
 
-/* line 30, ../sass/_animation.scss */
+/* line 31, ../sass/_animation.scss */
 #yellow {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 16.66% 83.33%;
   animation-name: yellow;
   animation-delay: .4s;
 }
 
-/* line 36, ../sass/_animation.scss */
+/* line 37, ../sass/_animation.scss */
 #red {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 83.33% 50%;
   animation-name: red;
   animation-delay: .5s;
 }
 
-/* line 42, ../sass/_animation.scss */
+/* line 43, ../sass/_animation.scss */
 #blue {
   animation-duration: 1.2s;
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-play-state: paused;
   transform-origin: 83.33% 16.66%;
   animation-name: blue;
   animation-delay: .6s;
