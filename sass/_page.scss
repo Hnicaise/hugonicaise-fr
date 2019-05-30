@@ -62,10 +62,11 @@
                 letter-spacing: 8px;
             }
             video {
-                height: 67vh;
-                width: 67vh;
+                height: 650px;
+                width: 650px;
                 border-radius: 65px;
                 object-fit: cover;
+                transition: .5s;
             }
             h3 {
                 writing-mode: vertical-rl;
