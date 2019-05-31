@@ -301,13 +301,14 @@ html, body {
   letter-spacing: 1px;
   font-weight: 400;
   margin-bottom: 25px;
+  margin-top: 80px;
 }
-/* line 11, ../sass/_projects.scss */
+/* line 12, ../sass/_projects.scss */
 .container_page.sub-page .row section .clapboard {
   display: flex;
   justify-content: center;
 }
-/* line 14, ../sass/_projects.scss */
+/* line 15, ../sass/_projects.scss */
 .container_page.sub-page .row section .clapboard div {
   padding: 20px;
   color: white;
@@ -317,27 +318,27 @@ html, body {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
 }
-/* line 22, ../sass/_projects.scss */
+/* line 23, ../sass/_projects.scss */
 .container_page.sub-page .row section .clapboard div:nth-child(4) {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   border-right: none;
 }
-/* line 27, ../sass/_projects.scss */
+/* line 28, ../sass/_projects.scss */
 .container_page.sub-page .row section .clapboard div h3 {
   font-style: italic;
   font-size: 1.6rem;
   margin: 0;
   line-height: 1;
 }
-/* line 33, ../sass/_projects.scss */
+/* line 34, ../sass/_projects.scss */
 .container_page.sub-page .row section .clapboard div p {
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0;
   line-height: 1.5;
 }
-/* line 41, ../sass/_projects.scss */
+/* line 42, ../sass/_projects.scss */
 .container_page.sub-page .row section .sub-title {
   width: 100%;
   color: white;
@@ -347,17 +348,13 @@ html, body {
   font-size: 1rem;
   font-weight: 500;
 }
-/* line 50, ../sass/_projects.scss */
+/* line 51, ../sass/_projects.scss */
 .container_page.sub-page .row section .sub-title span {
   font-weight: 600;
   font-size: 1.3rem;
   font-style: italic;
   margin-right: 20px;
   line-height: 0;
-}
-/* line 59, ../sass/_projects.scss */
-.container_page.sub-page .row section .description ul {
-  margin-bottom: 80px;
 }
 /* line 61, ../sass/_projects.scss */
 .container_page.sub-page .row section .description ul li {
@@ -378,6 +375,7 @@ html, body {
 /* line 76, ../sass/_projects.scss */
 .container_page.sub-page .row section .description img {
   width: 100%;
+  margin-bottom: 40px;
 }
 
 /* MULI */

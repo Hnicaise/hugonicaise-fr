@@ -39,6 +39,8 @@
                 </ul>
                 <h2>SYNOPSIS</h2>
                 <p>Lorem Ipsum.</p>
+                <h2>FIRST ROOM PREVIEW</h2>
+                <img src="img/from2060_room1.gif" alt="From2060 room preview" />
             </article>
         </section>
     </div>

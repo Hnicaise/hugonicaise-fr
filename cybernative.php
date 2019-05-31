@@ -40,6 +40,14 @@
                 </ul>
                 <h2>SYNOPSIS</h2>
                 <p>Lorem Ipsum.</p>
+                <h2>PROMOTIONAL WEBSITE</h2>
+                <img src="img/cybernative_promo1" alt="Cybernative promotional website preview" />
+                <img src="img/cybernative_promo2" alt="Cybernative promotional website preview" />
+                <img src="img/cybernative_promo3" alt="Cybernative promotional website preview" />
+                <h2>GAME PACKAGING & FLYERS</h2>
+                <img src="img/cybernative_packaging.png" alt="Cybernative game packaging" />
+                <h2>PROMOTIONAL TEASER RAW SHOT</h2>
+                <img src="img/cybernative_intro" alt="Cybernative promotional video preview" />
             </article>
         </section>
     </div>
