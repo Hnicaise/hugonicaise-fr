@@ -17,7 +17,6 @@ html, body {
 	-ms-user-select: none;
 	user-select: none;
 	position: absolute;
-	//color: #0c0c0c;
 	font-size: 15rem;
 	font-family: 'Archivo black';
 	z-index: -1;
@@ -49,7 +48,7 @@ html, body {
 }
 .container_navigation {
 	height: 100vh;
-	width: calc(100vw - 200px);
+	width: 100vw;
 	position: fixed;
 	top: 0;
 	left: -100vw;

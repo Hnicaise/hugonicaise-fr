@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+$(document).ready(function(){
 
     /* RELLAX INIT */
     var rellax = new Rellax('.rellax');
@@ -38,8 +38,8 @@ $(window).on('load', function() {
         var iCurScrollPos = $(this).scrollTop();
             iScrollPos = iCurScrollPos;
             opacity = 1 - iScrollPos/900;
-            if (opacity < 0.6) {
-                opacity = 0.6;
+            if (opacity < 0.4) {
+                opacity = 0.4;
             }
             $('.big-text').css('opacity', opacity);
     });
