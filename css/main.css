@@ -6,16 +6,55 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 /* line 1, ../sass/_page.scss */
 html, body {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-size: 100%;
   font-family: 'Muli';
   background-color: black;
+  overflow-y: scroll;
 }
 
-/* line 9, ../sass/_page.scss */
-.row.projects {
+/* line 11, ../sass/_page.scss */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* line 16, ../sass/_page.scss */
+.sound {
+  width: 25px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* line 24, ../sass/_page.scss */
+.close {
+  background-color: #222;
+  color: white;
+  font-size: 1.2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  margin: 0;
+  border-radius: 50px;
+  font-weight: 400;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: .8s;
+  cursor: pointer;
+}
+
+/* line 45, ../sass/_page.scss */
+.row.video {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,14 +62,14 @@ html, body {
   height: 100vh;
   width: 100vw;
 }
-/* line 16, ../sass/_page.scss */
-.row.projects article {
+/* line 52, ../sass/_page.scss */
+.row.video article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-/* line 20, ../sass/_page.scss */
-.row.projects article h2 {
+/* line 56, ../sass/_page.scss */
+.row.video article h2 {
   display: flex;
   font-family: 'Bebas';
   font-size: 8rem;
@@ -46,9 +85,11 @@ html, body {
   margin-top: 150px;
   letter-spacing: 8px;
   left: 20vw;
+  z-index: 1;
+  pointer-events: none;
 }
-/* line 21, ../sass/_page.scss */
-.row.projects article h2 span {
+/* line 57, ../sass/_page.scss */
+.row.video article h2 span {
   position: relative;
   margin: 0;
   line-height: 1;
@@ -62,16 +103,19 @@ html, body {
   right: 10px;
   top: 6px;
 }
-/* line 51, ../sass/_page.scss */
-.row.projects article video {
+/* line 89, ../sass/_page.scss */
+.row.video article video {
   height: 650px;
   width: 650px;
+  max-width: 1280px;
   border-radius: 65px;
   object-fit: cover;
   transition: .8s;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
-/* line 58, ../sass/_page.scss */
-.row.projects article h3 {
+/* line 99, ../sass/_page.scss */
+.row.video article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin: 0;
@@ -83,22 +127,33 @@ html, body {
   font-size: 1rem;
   position: relative;
 }
-/* line 70, ../sass/_page.scss */
-.row.projects article .left {
+/* line 111, ../sass/_page.scss */
+.row.video article .left {
   margin-right: 15px;
   margin-bottom: 70px;
   bottom: 0;
   text-align: right;
   align-self: flex-end;
 }
-/* line 77, ../sass/_page.scss */
-.row.projects article .right {
+/* line 118, ../sass/_page.scss */
+.row.video article .right {
   margin-left: 15px;
   margin-top: 70px;
 }
-/* line 82, ../sass/_page.scss */
-.row.projects .hidden {
+/* line 123, ../sass/_page.scss */
+.row.video .hidden {
   display: none;
+}
+
+/* line 127, ../sass/_page.scss */
+.details {
+  display: none;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  background-color: red;
+  margin-bottom: 15px;
+  height: 50px;
 }
 
 /* MULI */
