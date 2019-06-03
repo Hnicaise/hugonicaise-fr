@@ -7,6 +7,61 @@ html, body {
     background-color: black;
     overflow-y: scroll;
 }
+#preloader {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    opacity: 1;
+    z-index: 1500;
+    position: absolute;
+    top: 0;
+}
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    z-index: 2000;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 200px;
+    background: black;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  
+    max-width: 200px;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: white;
+} 
+.pace.pace-inactive {
+    display: none;
+}
 
 ::-webkit-scrollbar
 {
@@ -23,16 +78,15 @@ html, body {
 }
 .close {
     background-color: #222;
-
-    height: 50px;
-    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 2;
     margin: 0;
     border-radius: 50px;
-    
+    height: 0;
+    width: 0;
+    padding: 20px 22px 22px 22px;
     position: absolute;
     z-index: 2;
     top: 30px;
@@ -88,7 +142,7 @@ html, body {
             max-width: 500px;
             margin-top: 150px;
             letter-spacing: 8px;
-            left: 20vw;
+            left: 22vw;
             z-index: 1;
             pointer-events: none;
         }
@@ -139,68 +193,67 @@ html, body {
 }
 
 .report {
-
+    hr {
+        border: 0;
+        height: 70px;
+    }
+    h2 {
+        color: #808080;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 1.8rem;
+        font-family: 'Hind';
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 1;
+        margin: 0;
+        color: white;
+        margin-bottom: 15px;
+    }
+    h4 {
+        line-height: 1;
+        margin: 0;
+        font-size: 1.2rem;
+        color: white;
+        font-style: italic;
+        padding: 20px 0;
+        border-bottom: 1px solid white;
+        span {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-left: 10px;
+        }
+    }
+    p, li {
+        line-height: 1.5;
+        margin: 0;
+        font-size: 1rem;
+        color: white;
+    }
+    .col-2 {
+        columns: 2;
+    }
+    ol {
+        li {
+            line-height: 1.5;
+        }
+    }
+    .clapperboard {
+        display: flex;
+        div {
+            border-top: solid white 1px;
+            border-bottom: solid white 1px;
+            border-right: solid white 1px;
+            width: 100%;
+            padding: 40px 30px;
+            &:nth-child(3) {
+                border-right: none;
+            }
+            text-align: center;
+        }
+    }
 }
-
-#preloader {
-    height: 100vh;
-    width: 100vw;
-    background-color: black;
-    opacity: 1;
-    z-index: 1500;
-    position: absolute;
-    top: 0;
-}
-.pace {
-    -webkit-pointer-events: none;
-    pointer-events: none;
-  
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  
-    z-index: 2000;
-    position: fixed;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 5px;
-    width: 200px;
-    background: black;
-    border: 1px solid #fff;
-
-  
-    overflow: hidden;
-  }
-  
-  .pace .pace-progress {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-  
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  
-    max-width: 200px;
-    position: fixed;
-    z-index: 2000;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 100%;
-    height: 100%;
-    width: 100%;
-    background: white;
-  }
-  
-  .pace.pace-inactive {
-    display: none;
-  }
-  

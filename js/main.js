@@ -87,12 +87,14 @@ $(document).ready(function(){
 
     /* PACE */
     Pace.on('done', function() {
-        
             $('#preloader').animate({
                 opacity: "0",
             }, 1000);
         setTimeout(function(){
-            $('#preloader').css('display','none');
-        }, 1000);
+            $('#preloader').css('pointer-events','none');
+            setTimeout(function(){
+                $('#preloader').css('display','none');
+            }, 500);
+        }, 500);
     });
 });

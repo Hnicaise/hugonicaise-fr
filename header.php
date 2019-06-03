@@ -3,7 +3,7 @@
 <html>
     <head>
         <script src="js/pace.min.js"></script>
-        <title>Welcome — Front-End Engineering, Digital Creation and Webiste Development</title>
+        <title>Hugo Nicaise — Front-End Engineering, Digital Creation and Webiste Development</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
