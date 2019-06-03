@@ -161,9 +161,13 @@ html, body {
   height: 100vh;
   width: 100vw;
   background-color: black;
+  opacity: 1;
+  z-index: 1500;
+  position: absolute;
+  top: 0;
 }
 
-/* line 150, ../sass/_page.scss */
+/* line 154, ../sass/_page.scss */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -184,7 +188,7 @@ html, body {
   overflow: hidden;
 }
 
-/* line 174, ../sass/_page.scss */
+/* line 178, ../sass/_page.scss */
 .pace .pace-progress {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -208,7 +212,7 @@ html, body {
   background: white;
 }
 
-/* line 199, ../sass/_page.scss */
+/* line 203, ../sass/_page.scss */
 .pace.pace-inactive {
   display: none;
 }
