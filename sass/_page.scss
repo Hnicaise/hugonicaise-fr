@@ -196,16 +196,16 @@ html, body {
     hr {
         border: 0;
         height: 70px;
+        width: 50%;
     }
     h2 {
         color: #808080;
         font-size: 1rem;
-        letter-spacing: 2px;
         margin-bottom: 20px;
         font-weight: 400;
     }
     h3 {
-        font-size: 1.8rem;
+        font-size: 1.1rem;
         font-family: 'Hind';
         text-transform: uppercase;
         font-style: italic;
@@ -215,9 +215,10 @@ html, body {
         margin-bottom: 15px;
     }
     h4 {
+        width: 50%;
         line-height: 1;
         margin: 0;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: white;
         font-style: italic;
         padding: 20px 0;
@@ -244,16 +245,24 @@ html, body {
     }
     .clapperboard {
         display: flex;
+        width: 50%;
         div {
             border-top: solid white 1px;
             border-bottom: solid white 1px;
             border-right: solid white 1px;
+            padding: 15px;
             width: 100%;
-            padding: 40px 30px;
             &:nth-child(3) {
                 border-right: none;
             }
             text-align: center;
+            p {
+                line-height: 1;
+                font-size: 2rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
         }
     }
 }

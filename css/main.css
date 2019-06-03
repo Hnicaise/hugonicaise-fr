@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap");
 /* line 1, ../sass/_page.scss */
 html, body {
   overflow-x: hidden;
@@ -222,18 +223,18 @@ html, body {
 .report hr {
   border: 0;
   height: 70px;
+  width: 50%;
 }
-/* line 200, ../sass/_page.scss */
+/* line 201, ../sass/_page.scss */
 .report h2 {
   color: #808080;
   font-size: 1rem;
-  letter-spacing: 2px;
   margin-bottom: 20px;
   font-weight: 400;
 }
 /* line 207, ../sass/_page.scss */
 .report h3 {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   font-family: 'Hind';
   text-transform: uppercase;
   font-style: italic;
@@ -244,51 +245,61 @@ html, body {
 }
 /* line 217, ../sass/_page.scss */
 .report h4 {
+  width: 50%;
   line-height: 1;
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   font-style: italic;
   padding: 20px 0;
   border-bottom: 1px solid white;
 }
-/* line 225, ../sass/_page.scss */
+/* line 226, ../sass/_page.scss */
 .report h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
 }
-/* line 231, ../sass/_page.scss */
+/* line 232, ../sass/_page.scss */
 .report p, .report li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 237, ../sass/_page.scss */
+/* line 238, ../sass/_page.scss */
 .report .col-2 {
   columns: 2;
 }
-/* line 241, ../sass/_page.scss */
+/* line 242, ../sass/_page.scss */
 .report ol li {
   line-height: 1.5;
 }
-/* line 245, ../sass/_page.scss */
+/* line 246, ../sass/_page.scss */
 .report .clapperboard {
   display: flex;
+  width: 50%;
 }
-/* line 247, ../sass/_page.scss */
+/* line 249, ../sass/_page.scss */
 .report .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
   border-right: solid white 1px;
+  padding: 15px;
   width: 100%;
-  padding: 40px 30px;
   text-align: center;
 }
-/* line 253, ../sass/_page.scss */
+/* line 255, ../sass/_page.scss */
 .report .clapperboard div:nth-child(3) {
   border-right: none;
+}
+/* line 259, ../sass/_page.scss */
+.report .clapperboard div p {
+  line-height: 1;
+  font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* MULI */
