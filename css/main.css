@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Hind:500,600&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
-@import url("https://fonts.googleapis.com/css?family=PT+Sans");
-@import url("https://fonts.googleapis.com/css?family=Squada+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 /* line 1, ../sass/_page.scss */
 html, body {
   overflow-x: hidden;
@@ -33,17 +30,14 @@ html, body {
 /* line 24, ../sass/_page.scss */
 .close {
   background-color: #222;
-  color: white;
-  font-size: 1.2rem;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1;
+  line-height: 2;
   margin: 0;
   border-radius: 50px;
-  font-weight: 400;
   position: absolute;
   z-index: 2;
   top: 30px;
@@ -52,8 +46,16 @@ html, body {
   transition: .8s;
   cursor: pointer;
 }
+/* line 43, ../sass/_page.scss */
+.close p {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2;
+  font-family: 'Comfortaa', 'cursive';
+}
 
-/* line 45, ../sass/_page.scss */
+/* line 51, ../sass/_page.scss */
 .row.video {
   display: flex;
   flex-direction: column;
@@ -62,13 +64,13 @@ html, body {
   height: 100vh;
   width: 100vw;
 }
-/* line 52, ../sass/_page.scss */
+/* line 58, ../sass/_page.scss */
 .row.video article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-/* line 56, ../sass/_page.scss */
+/* line 62, ../sass/_page.scss */
 .row.video article h2 {
   display: flex;
   font-family: 'Bebas';
@@ -88,7 +90,7 @@ html, body {
   z-index: 1;
   pointer-events: none;
 }
-/* line 57, ../sass/_page.scss */
+/* line 63, ../sass/_page.scss */
 .row.video article h2 span {
   position: relative;
   margin: 0;
@@ -103,7 +105,7 @@ html, body {
   right: 10px;
   top: 6px;
 }
-/* line 89, ../sass/_page.scss */
+/* line 95, ../sass/_page.scss */
 .row.video article video {
   height: 650px;
   width: 650px;
@@ -114,7 +116,7 @@ html, body {
   filter: grayscale(100%);
   cursor: pointer;
 }
-/* line 99, ../sass/_page.scss */
+/* line 105, ../sass/_page.scss */
 .row.video article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -127,7 +129,7 @@ html, body {
   font-size: 1rem;
   position: relative;
 }
-/* line 111, ../sass/_page.scss */
+/* line 117, ../sass/_page.scss */
 .row.video article .left {
   margin-right: 15px;
   margin-bottom: 70px;
@@ -135,25 +137,80 @@ html, body {
   text-align: right;
   align-self: flex-end;
 }
-/* line 118, ../sass/_page.scss */
+/* line 124, ../sass/_page.scss */
 .row.video article .right {
   margin-left: 15px;
   margin-top: 70px;
 }
-/* line 123, ../sass/_page.scss */
+/* line 129, ../sass/_page.scss */
 .row.video .hidden {
   display: none;
 }
 
-/* line 127, ../sass/_page.scss */
+/* line 133, ../sass/_page.scss */
 .details {
   display: none;
   margin: 0 auto;
   max-width: 1280px;
   width: 100%;
-  background-color: red;
   margin-bottom: 15px;
-  height: 50px;
+}
+
+/* line 145, ../sass/_page.scss */
+#preloader {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+/* line 150, ../sass/_page.scss */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+  width: 200px;
+  background: black;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+/* line 174, ../sass/_page.scss */
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  max-width: 200px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+
+/* line 199, ../sass/_page.scss */
+.pace.pace-inactive {
+  display: none;
 }
 
 /* MULI */

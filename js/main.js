@@ -46,7 +46,7 @@ $(document).ready(function(){
             });
             setTimeout(function(){
                 $('.details').css('display','none');
-                $('.d'+ i).css('display','flex');
+                $('.d'+ i).css('display','block');
             }, 600);
             $('.close').css({
                 'opacity':'1'
@@ -87,6 +87,8 @@ $(document).ready(function(){
 
     /* PACE */
     Pace.on('done', function() {
-        
+        setTimeout(function(){
+            $('#preloader').css('display','none');
+        }, 150);
     });
 });

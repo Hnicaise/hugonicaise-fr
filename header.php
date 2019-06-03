@@ -12,3 +12,4 @@
         <link rel="icon" type="image/png" href="img/fav.png" />
     </head>
     <body>
+        <div id="preloader"></div>

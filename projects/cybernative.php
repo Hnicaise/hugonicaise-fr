@@ -1,1 +1,3 @@
-<hr>
+<article class="report">
+
+</article>

@@ -1,6 +1,8 @@
 <?php include ('header.php'); ?>
     <audio id="player" src="sound/tick.mp3" loop="true"></audio>
-    <div class="close">X</div>
+    <div class="close">
+        <p>x</p>
+    </div>
     <img src="img/off.svg" class="sound" />
     <section class="row video" id="app">
         <div>
