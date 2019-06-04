@@ -320,26 +320,30 @@ html, body {
   margin-left: 10px;
 }
 /* line 272, ../sass/_page.scss */
+.report section img {
+  width: 100%;
+}
+/* line 275, ../sass/_page.scss */
 .report section .role {
   padding-top: 12px;
   border-bottom: 1px solid white;
 }
-/* line 276, ../sass/_page.scss */
+/* line 279, ../sass/_page.scss */
 .report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 283, ../sass/_page.scss */
+/* line 286, ../sass/_page.scss */
 .report section ol li {
   line-height: 1.5;
 }
-/* line 287, ../sass/_page.scss */
+/* line 290, ../sass/_page.scss */
 .report section .clapperboard {
   display: flex;
 }
-/* line 289, ../sass/_page.scss */
+/* line 292, ../sass/_page.scss */
 .report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -348,11 +352,11 @@ html, body {
   width: 100%;
   text-align: center;
 }
-/* line 295, ../sass/_page.scss */
+/* line 298, ../sass/_page.scss */
 .report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 299, ../sass/_page.scss */
+/* line 302, ../sass/_page.scss */
 .report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
@@ -360,7 +364,7 @@ html, body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 309, ../sass/_page.scss */
+/* line 312, ../sass/_page.scss */
 .report .col-2 {
   width: calc(50% - 30px);
 }
