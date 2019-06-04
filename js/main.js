@@ -47,8 +47,9 @@ $(document).ready(function(){
             setTimeout(function(){
                 $('.details').css('display','none');
                 $('.d'+ i).css('display','block');
+                $('html').css('overflow-y','scroll');
             }, 600);
-            $('.close').css({
+            $('.close, .scroll-downs').css({
                 'opacity':'1'
             });
         }, 500);
@@ -60,10 +61,11 @@ $(document).ready(function(){
             'filter':'',
             'cursor':''
         });
-        $('.close').css({
+        $('.close, .scroll-downs').css({
             'opacity':''
         });
         $('.details').css('display','');
+        $('html').css('overflow-y','');
         setTimeout(function(){
             $('.project h2').animate({
                 opacity: "1",

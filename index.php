@@ -1,5 +1,10 @@
 <?php include ('header.php'); ?>
     <audio id="player" src="sound/tick.mp3" loop="true"></audio>
+    <div class="scroll-downs">
+        <div class="mousey">
+            <div class="scroller"></div>
+        </div>
+    </div>
     <div class="close">
         <p>x</p>
     </div>

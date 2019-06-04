@@ -10,7 +10,7 @@ html, body {
   font-size: 100%;
   font-family: 'Muli';
   background-color: black;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 /* line 10, ../sass/_page.scss */
@@ -90,6 +90,56 @@ html, body {
 }
 
 /* line 79, ../sass/_page.scss */
+.scroll-downs {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  width: 34px;
+  height: 55px;
+  transition: .8s;
+  z-index: 50;
+}
+
+/* line 91, ../sass/_page.scss */
+.mousey {
+  width: 3px;
+  padding: 7px 12px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+/* line 100, ../sass/_page.scss */
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+/* line 115, ../sass/_page.scss */
 .close {
   background-color: #222;
   display: flex;
@@ -109,7 +159,7 @@ html, body {
   transition: .8s;
   cursor: pointer;
 }
-/* line 97, ../sass/_page.scss */
+/* line 133, ../sass/_page.scss */
 .close p {
   color: white;
   font-size: 1.7rem;
@@ -118,7 +168,7 @@ html, body {
   font-family: 'Comfortaa', 'cursive';
 }
 
-/* line 105, ../sass/_page.scss */
+/* line 141, ../sass/_page.scss */
 .row.video {
   display: flex;
   flex-direction: column;
@@ -126,14 +176,15 @@ html, body {
   align-items: center;
   height: 100vh;
   width: 100vw;
+  margin-bottom: 50px;
 }
-/* line 112, ../sass/_page.scss */
+/* line 149, ../sass/_page.scss */
 .row.video article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-/* line 116, ../sass/_page.scss */
+/* line 153, ../sass/_page.scss */
 .row.video article h2 {
   display: flex;
   font-family: 'Bebas';
@@ -153,7 +204,7 @@ html, body {
   z-index: 1;
   pointer-events: none;
 }
-/* line 117, ../sass/_page.scss */
+/* line 154, ../sass/_page.scss */
 .row.video article h2 span {
   position: relative;
   margin: 0;
@@ -168,7 +219,7 @@ html, body {
   right: 10px;
   top: 6px;
 }
-/* line 149, ../sass/_page.scss */
+/* line 186, ../sass/_page.scss */
 .row.video article video {
   height: 650px;
   width: 650px;
@@ -179,7 +230,7 @@ html, body {
   filter: grayscale(100%);
   cursor: pointer;
 }
-/* line 159, ../sass/_page.scss */
+/* line 196, ../sass/_page.scss */
 .row.video article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -192,7 +243,7 @@ html, body {
   font-size: 1rem;
   position: relative;
 }
-/* line 171, ../sass/_page.scss */
+/* line 208, ../sass/_page.scss */
 .row.video article .left {
   margin-right: 15px;
   margin-bottom: 70px;
@@ -200,17 +251,17 @@ html, body {
   text-align: right;
   align-self: flex-end;
 }
-/* line 178, ../sass/_page.scss */
+/* line 215, ../sass/_page.scss */
 .row.video article .right {
   margin-left: 15px;
   margin-top: 70px;
 }
-/* line 183, ../sass/_page.scss */
+/* line 220, ../sass/_page.scss */
 .row.video .hidden {
   display: none;
 }
 
-/* line 187, ../sass/_page.scss */
+/* line 224, ../sass/_page.scss */
 .details {
   display: none;
   margin: 0 auto;
@@ -219,30 +270,30 @@ html, body {
   margin-bottom: 15px;
 }
 
-/* line 195, ../sass/_page.scss */
+/* line 232, ../sass/_page.scss */
 .report {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 199, ../sass/_page.scss */
+/* line 236, ../sass/_page.scss */
 .report section {
   width: 100%;
 }
-/* line 201, ../sass/_page.scss */
+/* line 238, ../sass/_page.scss */
 .report section hr {
   border: 0;
   height: 70px;
   width: 50%;
 }
-/* line 206, ../sass/_page.scss */
+/* line 243, ../sass/_page.scss */
 .report section h2 {
   color: #808080;
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: 400;
 }
-/* line 212, ../sass/_page.scss */
+/* line 249, ../sass/_page.scss */
 .report section h3 {
   font-size: 1.1rem;
   font-family: 'Hind';
@@ -253,42 +304,42 @@ html, body {
   color: white;
   margin-bottom: 15px;
 }
-/* line 222, ../sass/_page.scss */
+/* line 259, ../sass/_page.scss */
 .report section h4 {
-  line-height: 1;
+  line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
   font-style: italic;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
-/* line 229, ../sass/_page.scss */
+/* line 266, ../sass/_page.scss */
 .report section h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
 }
-/* line 235, ../sass/_page.scss */
+/* line 272, ../sass/_page.scss */
 .report section .role {
-  padding-top: 15px;
+  padding-top: 12px;
   border-bottom: 1px solid white;
 }
-/* line 239, ../sass/_page.scss */
+/* line 276, ../sass/_page.scss */
 .report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 246, ../sass/_page.scss */
+/* line 283, ../sass/_page.scss */
 .report section ol li {
   line-height: 1.5;
 }
-/* line 250, ../sass/_page.scss */
+/* line 287, ../sass/_page.scss */
 .report section .clapperboard {
   display: flex;
 }
-/* line 252, ../sass/_page.scss */
+/* line 289, ../sass/_page.scss */
 .report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -297,11 +348,11 @@ html, body {
   width: 100%;
   text-align: center;
 }
-/* line 258, ../sass/_page.scss */
+/* line 295, ../sass/_page.scss */
 .report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 262, ../sass/_page.scss */
+/* line 299, ../sass/_page.scss */
 .report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
@@ -309,7 +360,7 @@ html, body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 272, ../sass/_page.scss */
+/* line 309, ../sass/_page.scss */
 .report .col-2 {
   width: calc(50% - 30px);
 }

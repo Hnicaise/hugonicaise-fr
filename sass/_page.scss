@@ -5,7 +5,7 @@ html, body {
 	font-size: 100%;
     font-family: 'Muli';
     background-color: black;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 #preloader {
     height: 100vh;
@@ -76,6 +76,42 @@ html, body {
     cursor: pointer;
     z-index: 2;
 }
+.scroll-downs {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    margin: auto;
+    opacity: 0;
+    width :34px;
+    height: 55px;
+    transition: .8s;
+    z-index: 50;
+  }
+  .mousey {
+    width: 3px;
+    padding: 7px 12px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
 .close {
     background-color: #222;
     display: flex;
@@ -109,6 +145,7 @@ html, body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    margin-bottom: 50px;
     article {
         display: flex;
         justify-content: center;
@@ -220,12 +257,12 @@ html, body {
             margin-bottom: 15px;
         }
         h4 {
-            line-height: 1;
+            line-height: 1.5;
             margin: 0;
             font-size: 1rem;
             color: white;
             font-style: italic;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
             span {
                 font-weight: 400;
                 font-size: 1rem;
@@ -233,7 +270,7 @@ html, body {
             }
         }
         .role {
-            padding-top: 15px;
+            padding-top: 12px;
             border-bottom: 1px solid white;
         }
         p, li {
