@@ -219,21 +219,31 @@ html, body {
   margin-bottom: 15px;
 }
 
-/* line 196, ../sass/_page.scss */
-.report hr {
+/* line 195, ../sass/_page.scss */
+.report {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 199, ../sass/_page.scss */
+.report section {
+  width: 100%;
+}
+/* line 201, ../sass/_page.scss */
+.report section hr {
   border: 0;
   height: 70px;
   width: 50%;
 }
-/* line 201, ../sass/_page.scss */
-.report h2 {
+/* line 206, ../sass/_page.scss */
+.report section h2 {
   color: #808080;
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: 400;
 }
-/* line 207, ../sass/_page.scss */
-.report h3 {
+/* line 212, ../sass/_page.scss */
+.report section h3 {
   font-size: 1.1rem;
   font-family: 'Hind';
   text-transform: uppercase;
@@ -243,45 +253,43 @@ html, body {
   color: white;
   margin-bottom: 15px;
 }
-/* line 217, ../sass/_page.scss */
-.report h4 {
-  width: 50%;
+/* line 222, ../sass/_page.scss */
+.report section h4 {
   line-height: 1;
   margin: 0;
   font-size: 1rem;
   color: white;
   font-style: italic;
-  padding: 20px 0;
-  border-bottom: 1px solid white;
+  padding-bottom: 15px;
 }
-/* line 226, ../sass/_page.scss */
-.report h4 span {
+/* line 229, ../sass/_page.scss */
+.report section h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
 }
-/* line 232, ../sass/_page.scss */
-.report p, .report li {
+/* line 235, ../sass/_page.scss */
+.report section .role {
+  padding-top: 15px;
+  border-bottom: 1px solid white;
+}
+/* line 239, ../sass/_page.scss */
+.report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 238, ../sass/_page.scss */
-.report .col-2 {
-  columns: 2;
-}
-/* line 242, ../sass/_page.scss */
-.report ol li {
+/* line 246, ../sass/_page.scss */
+.report section ol li {
   line-height: 1.5;
 }
-/* line 246, ../sass/_page.scss */
-.report .clapperboard {
+/* line 250, ../sass/_page.scss */
+.report section .clapperboard {
   display: flex;
-  width: 50%;
 }
-/* line 249, ../sass/_page.scss */
-.report .clapperboard div {
+/* line 252, ../sass/_page.scss */
+.report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
   border-right: solid white 1px;
@@ -289,17 +297,21 @@ html, body {
   width: 100%;
   text-align: center;
 }
-/* line 255, ../sass/_page.scss */
-.report .clapperboard div:nth-child(3) {
+/* line 258, ../sass/_page.scss */
+.report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 259, ../sass/_page.scss */
-.report .clapperboard div p {
+/* line 262, ../sass/_page.scss */
+.report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
+}
+/* line 272, ../sass/_page.scss */
+.report .col-2 {
+  width: calc(50% - 30px);
 }
 
 /* MULI */
