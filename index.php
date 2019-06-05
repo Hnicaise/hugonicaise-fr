@@ -1,5 +1,4 @@
 <?php include ('header.php'); ?>
-    <audio id="player" src="sound/tick.mp3" loop="true"></audio>
     <div class="scroll-downs">
         <div class="mousey">
             <div class="scroller"></div>
@@ -8,7 +7,6 @@
     <div class="close">
         <p>x</p>
     </div>
-    <img src="img/off.svg" class="sound" />
     <section class="row video" id="app">
         <div>
             <article v-for="project in projects" class="project hidden" :class="project.class">

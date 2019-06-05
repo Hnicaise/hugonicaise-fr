@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     /* ROLLING PROJECTS */
     var i = 1;
-    var t = 0;
+    var t = 1;
     var nbItems = $('.project').length;
     $('.p0').removeClass('hidden');
     
@@ -56,6 +56,7 @@ $(document).ready(function(){
     });
     $('.close').click(function(){
         t = 0;
+        window.scrollTo(0, 0);
         $('video').css({
             'width':'',
             'filter':'',
@@ -74,14 +75,16 @@ $(document).ready(function(){
     });
 
     /* SOUND */
-    $('.sound').click((function(toggleValue){
+    $('.music').click((function(toggleValue){
         return function(e){
             if(toggleValue){
-                $('.sound').attr('src','img/on.svg');
-                $("#player")[0].play();
+                $('img', this).attr('src','img/on.svg');
+                $('audio', this)[0].play();
+                $(this).blur(); 
             }else{
-                $('.sound').attr('src','img/off.svg');
-                $("#player")[0].pause();
+                $('img', this).attr('src','img/off.svg');
+                $('audio', this)[0].pause();
+                $(this).blur();
             }
             toggleValue = !toggleValue;
         }
@@ -98,5 +101,6 @@ $(document).ready(function(){
                 $('#preloader').css('display','none');
             }, 500);
         }, 500);
+        t = 0;
     });
 });

@@ -68,14 +68,7 @@ html, body {
   width: 0;
 }
 
-.sound {
-    width: 25px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    cursor: pointer;
-    z-index: 2;
-}
+
 .scroll-downs {
     position: absolute;
     right: 0;
@@ -145,7 +138,7 @@ html, body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    margin-bottom: 50px;
+    
     article {
         display: flex;
         justify-content: center;
@@ -226,9 +219,9 @@ html, body {
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
+    margin-top: 50px;
     margin-bottom: 15px;
 }
-
 .report {
     display: flex;
     flex-wrap: wrap;
@@ -237,8 +230,8 @@ html, body {
         width: 100%;
         hr {
             border: 0;
-            height: 70px;
-            width: 50%;
+            height: 40px;
+            width: 100%;
         }
         h2 {
             color: #808080;
@@ -269,8 +262,27 @@ html, body {
                 margin-left: 10px;
             }
         }
+        .caption {
+            text-align: right;
+            font-style: italic;
+            font-size: .8rem;
+            color: #808080;
+        }
         img {
             width: 100%;
+        }
+        .music {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+            margin-bottom: 15px;
+            img {
+                position: relative;
+                top: 2px;
+                margin-left: 11px;
+                cursor: pointer;
+                width: 12px;
+            }
         }
         .role {
             padding-top: 12px;
