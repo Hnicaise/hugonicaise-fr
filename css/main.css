@@ -14,6 +14,11 @@ html, body {
 }
 
 /* line 10, ../sass/_page.scss */
+strong {
+  font-weight: 900;
+}
+
+/* line 13, ../sass/_page.scss */
 #preloader {
   height: 100vh;
   width: 100vw;
@@ -24,7 +29,7 @@ html, body {
   top: 0;
 }
 
-/* line 19, ../sass/_page.scss */
+/* line 22, ../sass/_page.scss */
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -45,7 +50,7 @@ html, body {
   overflow: hidden;
 }
 
-/* line 38, ../sass/_page.scss */
+/* line 41, ../sass/_page.scss */
 .pace .pace-progress {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -69,17 +74,17 @@ html, body {
   background: white;
 }
 
-/* line 62, ../sass/_page.scss */
+/* line 65, ../sass/_page.scss */
 .pace.pace-inactive {
   display: none;
 }
 
-/* line 66, ../sass/_page.scss */
+/* line 69, ../sass/_page.scss */
 ::-webkit-scrollbar {
   width: 0;
 }
 
-/* line 72, ../sass/_page.scss */
+/* line 75, ../sass/_page.scss */
 .scroll-downs {
   position: absolute;
   right: 0;
@@ -93,7 +98,7 @@ html, body {
   z-index: 50;
 }
 
-/* line 84, ../sass/_page.scss */
+/* line 87, ../sass/_page.scss */
 .mousey {
   width: 3px;
   padding: 7px 12px;
@@ -104,7 +109,7 @@ html, body {
   box-sizing: content-box;
 }
 
-/* line 93, ../sass/_page.scss */
+/* line 96, ../sass/_page.scss */
 .scroller {
   width: 3px;
   height: 10px;
@@ -129,7 +134,7 @@ html, body {
     opacity: 0;
   }
 }
-/* line 108, ../sass/_page.scss */
+/* line 111, ../sass/_page.scss */
 .close {
   background-color: #222;
   display: flex;
@@ -149,7 +154,7 @@ html, body {
   transition: .8s;
   cursor: pointer;
 }
-/* line 126, ../sass/_page.scss */
+/* line 129, ../sass/_page.scss */
 .close p {
   color: white;
   font-size: 1.7rem;
@@ -158,7 +163,7 @@ html, body {
   font-family: 'Comfortaa', 'cursive';
 }
 
-/* line 134, ../sass/_page.scss */
+/* line 137, ../sass/_page.scss */
 .row.video {
   display: flex;
   flex-direction: column;
@@ -167,13 +172,13 @@ html, body {
   height: 100vh;
   width: 100vw;
 }
-/* line 142, ../sass/_page.scss */
+/* line 145, ../sass/_page.scss */
 .row.video article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-/* line 146, ../sass/_page.scss */
+/* line 149, ../sass/_page.scss */
 .row.video article h2 {
   display: flex;
   font-family: 'Bebas';
@@ -193,7 +198,7 @@ html, body {
   z-index: 1;
   pointer-events: none;
 }
-/* line 147, ../sass/_page.scss */
+/* line 150, ../sass/_page.scss */
 .row.video article h2 span {
   position: relative;
   margin: 0;
@@ -208,7 +213,7 @@ html, body {
   right: 10px;
   top: 6px;
 }
-/* line 179, ../sass/_page.scss */
+/* line 182, ../sass/_page.scss */
 .row.video article video {
   height: 650px;
   width: 650px;
@@ -219,7 +224,7 @@ html, body {
   filter: grayscale(100%);
   cursor: pointer;
 }
-/* line 189, ../sass/_page.scss */
+/* line 192, ../sass/_page.scss */
 .row.video article h3 {
   writing-mode: vertical-rl;
   text-orientation: mixed;
@@ -232,7 +237,7 @@ html, body {
   font-size: 1rem;
   position: relative;
 }
-/* line 201, ../sass/_page.scss */
+/* line 204, ../sass/_page.scss */
 .row.video article .left {
   margin-right: 15px;
   margin-bottom: 70px;
@@ -240,17 +245,17 @@ html, body {
   text-align: right;
   align-self: flex-end;
 }
-/* line 208, ../sass/_page.scss */
+/* line 211, ../sass/_page.scss */
 .row.video article .right {
   margin-left: 15px;
   margin-top: 70px;
 }
-/* line 213, ../sass/_page.scss */
+/* line 216, ../sass/_page.scss */
 .row.video .hidden {
   display: none;
 }
 
-/* line 217, ../sass/_page.scss */
+/* line 220, ../sass/_page.scss */
 .details {
   display: none;
   margin: 0 auto;
@@ -260,30 +265,30 @@ html, body {
   margin-bottom: 15px;
 }
 
-/* line 225, ../sass/_page.scss */
+/* line 228, ../sass/_page.scss */
 .report {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-/* line 229, ../sass/_page.scss */
+/* line 232, ../sass/_page.scss */
 .report section {
   width: 100%;
 }
-/* line 231, ../sass/_page.scss */
+/* line 234, ../sass/_page.scss */
 .report section hr {
   border: 0;
   height: 40px;
   width: 100%;
 }
-/* line 236, ../sass/_page.scss */
+/* line 239, ../sass/_page.scss */
 .report section h2 {
   color: #808080;
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: 400;
 }
-/* line 242, ../sass/_page.scss */
+/* line 245, ../sass/_page.scss */
 .report section h3 {
   font-size: 1.1rem;
   font-family: 'Hind';
@@ -294,7 +299,7 @@ html, body {
   color: white;
   margin-bottom: 15px;
 }
-/* line 252, ../sass/_page.scss */
+/* line 255, ../sass/_page.scss */
 .report section h4 {
   line-height: 1.5;
   margin: 0;
@@ -303,59 +308,59 @@ html, body {
   font-style: italic;
   padding-bottom: 12px;
 }
-/* line 259, ../sass/_page.scss */
+/* line 262, ../sass/_page.scss */
 .report section h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
 }
-/* line 265, ../sass/_page.scss */
+/* line 268, ../sass/_page.scss */
 .report section .caption {
   text-align: right;
   font-style: italic;
   font-size: .8rem;
   color: #808080;
 }
-/* line 271, ../sass/_page.scss */
+/* line 274, ../sass/_page.scss */
 .report section img {
   width: 100%;
 }
-/* line 274, ../sass/_page.scss */
+/* line 277, ../sass/_page.scss */
 .report section .music {
   display: flex;
   align-items: center;
   line-height: 1;
   margin-bottom: 15px;
 }
-/* line 279, ../sass/_page.scss */
+/* line 282, ../sass/_page.scss */
 .report section .music img {
   position: relative;
   top: 2px;
   margin-left: 11px;
   cursor: pointer;
-  width: 12px;
+  width: 10px;
 }
-/* line 287, ../sass/_page.scss */
+/* line 290, ../sass/_page.scss */
 .report section .role {
   padding-top: 12px;
   border-bottom: 1px solid white;
 }
-/* line 291, ../sass/_page.scss */
+/* line 294, ../sass/_page.scss */
 .report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 298, ../sass/_page.scss */
+/* line 301, ../sass/_page.scss */
 .report section ol li {
   line-height: 1.5;
 }
-/* line 302, ../sass/_page.scss */
+/* line 305, ../sass/_page.scss */
 .report section .clapperboard {
   display: flex;
 }
-/* line 304, ../sass/_page.scss */
+/* line 307, ../sass/_page.scss */
 .report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -364,11 +369,11 @@ html, body {
   width: 100%;
   text-align: center;
 }
-/* line 310, ../sass/_page.scss */
+/* line 313, ../sass/_page.scss */
 .report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 314, ../sass/_page.scss */
+/* line 317, ../sass/_page.scss */
 .report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
@@ -376,7 +381,7 @@ html, body {
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 324, ../sass/_page.scss */
+/* line 327, ../sass/_page.scss */
 .report .col-2 {
   width: calc(50% - 30px);
 }

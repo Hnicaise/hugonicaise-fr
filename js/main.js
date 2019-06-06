@@ -80,11 +80,9 @@ $(document).ready(function(){
             if(toggleValue){
                 $('img', this).attr('src','img/on.svg');
                 $('audio', this)[0].play();
-                $(this).blur(); 
             }else{
                 $('img', this).attr('src','img/off.svg');
                 $('audio', this)[0].pause();
-                $(this).blur();
             }
             toggleValue = !toggleValue;
         }
