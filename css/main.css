@@ -306,33 +306,35 @@ strong {
   font-size: 1rem;
   color: white;
   font-style: italic;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 /* line 262, ../sass/_page.scss */
 .report section h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
+  font-style: initial;
 }
-/* line 268, ../sass/_page.scss */
+/* line 269, ../sass/_page.scss */
 .report section .caption {
   text-align: right;
   font-style: italic;
   font-size: .8rem;
   color: #808080;
+  margin-top: 5px;
 }
-/* line 274, ../sass/_page.scss */
+/* line 276, ../sass/_page.scss */
 .report section img {
   width: 100%;
 }
-/* line 277, ../sass/_page.scss */
+/* line 279, ../sass/_page.scss */
 .report section .music {
   display: flex;
   align-items: center;
   line-height: 1;
   margin-bottom: 15px;
 }
-/* line 282, ../sass/_page.scss */
+/* line 284, ../sass/_page.scss */
 .report section .music img {
   position: relative;
   top: 1px;
@@ -340,27 +342,27 @@ strong {
   cursor: pointer;
   width: 10px;
 }
-/* line 290, ../sass/_page.scss */
+/* line 292, ../sass/_page.scss */
 .report section .role {
   padding-top: 12px;
   border-bottom: 1px solid white;
 }
-/* line 294, ../sass/_page.scss */
+/* line 296, ../sass/_page.scss */
 .report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 301, ../sass/_page.scss */
+/* line 303, ../sass/_page.scss */
 .report section ol li {
   line-height: 1.5;
 }
-/* line 305, ../sass/_page.scss */
+/* line 307, ../sass/_page.scss */
 .report section .clapperboard {
   display: flex;
 }
-/* line 307, ../sass/_page.scss */
+/* line 309, ../sass/_page.scss */
 .report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -369,11 +371,11 @@ strong {
   width: 100%;
   text-align: center;
 }
-/* line 313, ../sass/_page.scss */
+/* line 315, ../sass/_page.scss */
 .report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 317, ../sass/_page.scss */
+/* line 319, ../sass/_page.scss */
 .report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
@@ -381,7 +383,7 @@ strong {
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 327, ../sass/_page.scss */
+/* line 329, ../sass/_page.scss */
 .report .col-2 {
   width: calc(50% - 30px);
 }

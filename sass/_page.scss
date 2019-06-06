@@ -258,11 +258,12 @@ strong {
             font-size: 1rem;
             color: white;
             font-style: italic;
-            padding-bottom: 12px;
+            padding-bottom: 15px;
             span {
                 font-weight: 400;
                 font-size: 1rem;
                 margin-left: 10px;
+                font-style: initial;
             }
         }
         .caption {
@@ -270,6 +271,7 @@ strong {
             font-style: italic;
             font-size: .8rem;
             color: #808080;
+            margin-top: 5px;
         }
         img {
             width: 100%;
