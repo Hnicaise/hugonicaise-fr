@@ -27,20 +27,26 @@
         <hr>
         <h2>GAME SYNOPSIS</h2>
         <p>Your name is <strong>Isaac</strong>, a young boy about twenty, and you lost your memory. When you wake up, <strong>RosAI</strong> an artificial intelligence asks help to you to <strong>accomplish a mission</strong> she cannot do alone. During this adventure, you will have to solve several <strong>riddles</strong> with her support.</p>
+        <hr>
+        <h2>GAME DEVELOPMENT</h2>
+        <p>The game had to be playable <strong>through a browser</strong>. When the project has been announced I had no other possibilities than develop with the languages I had in my bag at this moment which were as follows: <strong>HTML, CSS, JS</strong> and <strong>JQuery</strong>. I did not have enough time to learn a more appropriate language. Indeed, this would have taken a long time to master, and we had only <strong>three weeks</strong> to make the project. Moreover, I had my back-end developer working hand in hand with me, and would have to learn another language too. <strong>Way too risky</strong>. So, we decided to create the project with a bunch of <strong>JavaScript lines</strong>, <strong>CSS animations</strong> and <strong>HTML</strong> for the Front, <strong>PHP</strong> and <strong>Ajax</strong> for the Back. And honestly, it worked well.</p>
     </section>
 
     <!--- COL 2 --->
     <section class="col-2">
-        <h2>GAME DEVELOPMENT</h2>
-        <p>The game had to be playable <strong>through a browser</strong>. When the project has been announced I had no other possibilities than develop with the languages I had in my bag at this moment which were as follows: <strong>HTML, CSS, JS</strong> and <strong>Jquery</strong>. I did not have enough time to learn a more appropriate language. Indeed, this would have taken a long time to master, and we had only <strong>three weeks</strong> to make the project. Moreover, I had my back-end developer working hand in hand with me, and would have to learn another language too. <strong>Way too risky</strong>. So, we decided to create the project with a bunch of <strong>JavaScript lines</strong>, <strong>CSS animations</strong> and <strong>HTML</strong> for the Front, <strong>PHP</strong> and <strong>Ajax</strong> for the Back. And honestly, it worked well.</p>
-        <hr>
         <h2>GRAPHIC DESIGN</h2>
         <p>We decided to create the game in <strong>pixel art</strong>. This was a way for us to <strong>stand out</strong> from the other students. Also, this kind of graphic design was really appropriate to <strong>gaming</strong> purpose. Indeed, pixel art allows you able to create complex illustrations with minimum effort, which was a good thing for us because we were time restricted. It also gives you this <strong>8bit</strong> style.</p>
+        <hr>
+        <img src="img/room.gif" alt="Isaac's room" />
+        <p class="caption">— Isaac's room</p>
         <hr>
         <h2>MUSIC</h2>
         <p>In this project, we asked our composer to produce <strong>tracks</strong> specifically for the game, to increase the <strong>immersion</strong> of the player. Indeed, you can make the player feel exactly what you want him to feel when he is playing your game. It’s equally if not <strong>more important</strong> than the story itself. Feel free to listen <i>"Calm"</i>, one of the 12 game tracks.</p>
         <br>
         <p class="music">♫ Alexander Ceccaldi - <i>Calm</i><audio src="sound/calm.ogg"></audio><img src="img/off.svg" /></p>
+        <hr>
+        <h2>GAME BOARD</h2>
+        <p>The <strong>game board</strong> is the key of the game. Without it you <strong>cannot finish</strong> the game. On this paper support are displayed much <strong>information</strong> such as codes, various assets and also things you don't really need. We wanted it to look like a <strong>dashboard</strong>, but with a more realistic look.</p>
     </section>
 </article>
 <br>

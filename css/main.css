@@ -335,7 +335,7 @@ strong {
 /* line 282, ../sass/_page.scss */
 .report section .music img {
   position: relative;
-  top: 2px;
+  top: 1px;
   margin-left: 11px;
   cursor: pointer;
   width: 10px;
