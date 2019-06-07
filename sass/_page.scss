@@ -233,9 +233,10 @@ strong {
         width: 100%;
         .clap {
             width: 100%;
-            height: 50px;
+            height: 45px;
             background-image: url('../img/clap.svg');
             background-size: contain;
+            background-position-x: 20px;
         }
         hr {
             border: 0;

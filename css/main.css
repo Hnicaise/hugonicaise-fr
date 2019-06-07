@@ -278,24 +278,25 @@ strong {
 /* line 234, ../sass/_page.scss */
 .report section .clap {
   width: 100%;
-  height: 50px;
+  height: 45px;
   background-image: url("../img/clap.svg");
   background-size: contain;
+  background-position-x: 20px;
 }
-/* line 240, ../sass/_page.scss */
+/* line 241, ../sass/_page.scss */
 .report section hr {
   border: 0;
   height: 40px;
   width: 100%;
 }
-/* line 245, ../sass/_page.scss */
+/* line 246, ../sass/_page.scss */
 .report section h2 {
   color: #808080;
   font-size: 1rem;
   margin-bottom: 20px;
   font-weight: 400;
 }
-/* line 251, ../sass/_page.scss */
+/* line 252, ../sass/_page.scss */
 .report section h3 {
   font-size: 1.1rem;
   font-family: 'Hind';
@@ -306,7 +307,7 @@ strong {
   color: white;
   margin-bottom: 15px;
 }
-/* line 261, ../sass/_page.scss */
+/* line 262, ../sass/_page.scss */
 .report section h4 {
   line-height: 1.5;
   margin: 0;
@@ -315,14 +316,14 @@ strong {
   font-style: italic;
   padding-bottom: 15px;
 }
-/* line 268, ../sass/_page.scss */
+/* line 269, ../sass/_page.scss */
 .report section h4 span {
   font-weight: 400;
   font-size: 1rem;
   margin-left: 10px;
   font-style: initial;
 }
-/* line 275, ../sass/_page.scss */
+/* line 276, ../sass/_page.scss */
 .report section .caption {
   text-align: right;
   font-style: italic;
@@ -330,18 +331,18 @@ strong {
   color: #808080;
   margin-top: 5px;
 }
-/* line 282, ../sass/_page.scss */
+/* line 283, ../sass/_page.scss */
 .report section img {
   width: 100%;
 }
-/* line 285, ../sass/_page.scss */
+/* line 286, ../sass/_page.scss */
 .report section .music {
   display: flex;
   align-items: center;
   line-height: 1;
   margin-bottom: 15px;
 }
-/* line 290, ../sass/_page.scss */
+/* line 291, ../sass/_page.scss */
 .report section .music img {
   position: relative;
   top: 1px;
@@ -349,27 +350,27 @@ strong {
   cursor: pointer;
   width: 10px;
 }
-/* line 298, ../sass/_page.scss */
+/* line 299, ../sass/_page.scss */
 .report section .role {
   padding-top: 12px;
   border-bottom: 1px solid white;
 }
-/* line 302, ../sass/_page.scss */
+/* line 303, ../sass/_page.scss */
 .report section p, .report section li {
   line-height: 1.5;
   margin: 0;
   font-size: 1rem;
   color: white;
 }
-/* line 309, ../sass/_page.scss */
+/* line 310, ../sass/_page.scss */
 .report section ol li {
   line-height: 1.5;
 }
-/* line 313, ../sass/_page.scss */
+/* line 314, ../sass/_page.scss */
 .report section .clapperboard {
   display: flex;
 }
-/* line 315, ../sass/_page.scss */
+/* line 316, ../sass/_page.scss */
 .report section .clapperboard div {
   border-top: solid white 1px;
   border-bottom: solid white 1px;
@@ -378,11 +379,11 @@ strong {
   width: 100%;
   text-align: center;
 }
-/* line 321, ../sass/_page.scss */
+/* line 322, ../sass/_page.scss */
 .report section .clapperboard div:nth-child(3) {
   border-right: none;
 }
-/* line 325, ../sass/_page.scss */
+/* line 326, ../sass/_page.scss */
 .report section .clapperboard div p {
   line-height: 1;
   font-size: 2rem;
@@ -390,7 +391,7 @@ strong {
   font-weight: 500;
   letter-spacing: 1px;
 }
-/* line 335, ../sass/_page.scss */
+/* line 336, ../sass/_page.scss */
 .report .col-2 {
   width: calc(50% - 30px);
 }
