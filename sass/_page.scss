@@ -231,6 +231,12 @@ strong {
     justify-content: space-between;
     section {
         width: 100%;
+        .clap {
+            width: 100%;
+            height: 50px;
+            background-image: url('../img/clap.svg');
+            background-size: contain;
+        }
         hr {
             border: 0;
             height: 40px;

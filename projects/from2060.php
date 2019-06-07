@@ -1,7 +1,7 @@
 <article class="report">
     <section class="col-2">
-        <h2>IN A NUTSHELL</h2>
-        <h4>Title :<span>From 2060</span></h4>
+        <div class="clap"></div>
+        <h4 class="role">Title :<span>From 2060</span></h4>
         <div class="clapperboard">
             <div>
                 <h3>RIDDLE SOLVED</h3>
