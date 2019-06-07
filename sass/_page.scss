@@ -233,10 +233,10 @@ strong {
         width: 100%;
         .clap {
             width: 100%;
-            height: 45px;
+            height: 40px;
             background-image: url('../img/clap.svg');
             background-size: contain;
-            background-position-x: 20px;
+            margin-top: 5px;
         }
         hr {
             border: 0;
@@ -246,7 +246,8 @@ strong {
         h2 {
             color: #808080;
             font-size: 1rem;
-            margin-bottom: 20px;
+            margin: 0 0 20px 0;
+            line-height: 1;
             font-weight: 400;
         }
         h3 {

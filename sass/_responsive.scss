@@ -1,0 +1,12 @@
+@media screen and (max-width: 1080px) {
+    .report {
+        flex-direction: column;
+        align-items: center;
+        .col-2 {
+            width: calc(100vw - 70px);
+            h2 {
+                margin-top: 75px;
+            }
+        }
+    }
+}
